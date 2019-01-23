@@ -1,0 +1,49 @@
+.delipress__more
+    position relative
+    display inline-block
+    margin-left 10px
+
+    .delipress__button
+        transition .1s all linear
+
+.delipress__more:hover
+    a.delipress__button
+        background text-color
+        color #FFF
+        border-bottom-right-radius 0
+        border-bottom-left-radius 0
+        border-color text-color
+
+    .delipress__more__sub
+        transform scaleY(1)
+        opacity 1
+
+.delipress__more__sub
+    position absolute
+    top 100%
+    z-index 1
+    right 0
+    display block
+    background text-color
+    text-align left
+    min-width 140px
+    border-radius radius
+    border-top-right-radius 0
+    opacity 0
+    transform scaleY(0)
+    transform-origin 50% 0
+    transition .1s all linear
+
+    li
+        margin 0
+
+        a
+            display block
+            padding pad-xs
+            color neutral
+            transition base-transition
+
+            &:hover
+                transform translateX(5px)
+        &:last-child
+            border none

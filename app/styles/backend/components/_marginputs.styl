@@ -1,0 +1,105 @@
+.delipress__marginputs
+    display flex
+    width 100%
+
+.delipress__marginputs__cell
+    text-align center
+    position relative
+
+    &:hover > .delipress__marginputs__increment, &:focus > .delipress__marginputs__increment
+        opacity .7
+
+    &:before
+        content 'px'
+        position absolute
+        right 6px
+        font-size 12px
+        opacity .4
+        top 9px
+        pointer-events none
+
+        @media screen and (max-width: 1200px)
+            display none
+
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button
+        // -webkit-appearance none
+        margin 0
+
+    input[type=number]
+        // -moz-appearance textfield
+
+    input[type=number]
+        margin 0
+        border 2px solid neutral
+        border-right none
+        width 100%
+        box-shadow none
+        text-align right
+        padding-right 21px
+        height builder-input-height
+
+        @media screen and (max-width: 1200px)
+            padding-right 25px
+
+        &:focus
+            border-color neutral
+            box-shadow none
+
+            + label
+                opacity .8
+
+
+    &:first-child input
+        border-top-left-radius radius
+        border-bottom-left-radius radius
+
+    label
+        display block
+        font-size .75em
+        color text-color
+        line-height 1
+        text-transform uppercase
+        margin-top 2px
+        opacity .4
+        transition opacity .12s linear .1s
+
+.delipress__marginputs__increment
+    position absolute
+    z-index 10
+    right 0
+    font-size 10px
+    width (builder-input-height/2)
+    height (builder-input-height/2)
+    display flex
+    align-items center
+    justify-content center
+    top 0
+    background-color neutral
+    opacity 0.3
+    transition opacity .12s ease-in
+    cursor pointer
+
+    &:active
+        opacity 1 !important
+
+    &.dashicons-arrow-down-alt2
+        top (builder-input-height/2)
+
+.delipress__marginputs__locker
+    padding 0 11px
+    display block
+    background neutral
+    border 2px solid neutral
+    text-align center
+    color wp-text-color
+    height builder-input-height
+    border-top-right-radius radius
+    border-bottom-right-radius radius
+    &--text
+        line-height 29px
+    &:before
+        width 16px
+        height 16px
+        font-size 16px
+        line-height builder-input-height - 4px

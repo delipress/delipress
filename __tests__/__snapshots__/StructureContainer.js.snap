@@ -1,0 +1,196 @@
+exports[`Structure container render structure container 1`] = `
+<div>
+  <h1>
+    Template your newsletter
+  </h1>
+  <div>
+    <div
+      style={
+        Object {
+          "margin": "5px",
+          "width": "150px",
+        }
+      }>
+      <div
+        className="row__preview"
+        style={
+          Object {
+            "backgroundColor": "#ccc",
+            "boxSizing": "border-box",
+            "height": "40px",
+          }
+        }>
+        <div
+          className="column__preview"
+          style={
+            Object {
+              "backgroundColor": "#aaa",
+              "border": "4px solid #ccc",
+              "boxSizing": "border-box",
+              "float": "left",
+              "height": "38px",
+              "width": "100%",
+            }
+          } />
+      </div>
+      <div
+        className="row__preview"
+        style={
+          Object {
+            "backgroundColor": "#ccc",
+            "boxSizing": "border-box",
+            "height": "40px",
+          }
+        }>
+        <div
+          className="column__preview"
+          style={
+            Object {
+              "backgroundColor": "#aaa",
+              "border": "4px solid #ccc",
+              "boxSizing": "border-box",
+              "float": "left",
+              "height": "38px",
+              "width": "50%",
+            }
+          } />
+        <div
+          className="column__preview"
+          style={
+            Object {
+              "backgroundColor": "#aaa",
+              "border": "4px solid #ccc",
+              "boxSizing": "border-box",
+              "float": "left",
+              "height": "38px",
+              "width": "50%",
+            }
+          } />
+      </div>
+      <div
+        className="row__preview"
+        style={
+          Object {
+            "backgroundColor": "#ccc",
+            "boxSizing": "border-box",
+            "height": "40px",
+          }
+        }>
+        <div
+          className="column__preview"
+          style={
+            Object {
+              "backgroundColor": "#aaa",
+              "border": "4px solid #ccc",
+              "boxSizing": "border-box",
+              "float": "left",
+              "height": "38px",
+              "width": "100%",
+            }
+          } />
+      </div>
+    </div>
+    <button
+      onClick={[Function]}>
+      Choose this template
+    </button>
+  </div>
+  <div>
+    <div
+      style={
+        Object {
+          "margin": "5px",
+          "width": "150px",
+        }
+      }>
+      <div
+        className="row__preview"
+        style={
+          Object {
+            "backgroundColor": "#ccc",
+            "boxSizing": "border-box",
+            "height": "40px",
+          }
+        }>
+        <div
+          className="column__preview"
+          style={
+            Object {
+              "backgroundColor": "#aaa",
+              "border": "4px solid #ccc",
+              "boxSizing": "border-box",
+              "float": "left",
+              "height": "38px",
+              "width": "100%",
+            }
+          } />
+      </div>
+      <div
+        className="row__preview"
+        style={
+          Object {
+            "backgroundColor": "#ccc",
+            "boxSizing": "border-box",
+            "height": "40px",
+          }
+        }>
+        <div
+          className="column__preview"
+          style={
+            Object {
+              "backgroundColor": "#aaa",
+              "border": "4px solid #ccc",
+              "boxSizing": "border-box",
+              "float": "left",
+              "height": "38px",
+              "width": "100%",
+            }
+          } />
+      </div>
+      <div
+        className="row__preview"
+        style={
+          Object {
+            "backgroundColor": "#ccc",
+            "boxSizing": "border-box",
+            "height": "40px",
+          }
+        }>
+        <div
+          className="column__preview"
+          style={
+            Object {
+              "backgroundColor": "#aaa",
+              "border": "4px solid #ccc",
+              "boxSizing": "border-box",
+              "float": "left",
+              "height": "38px",
+              "width": "50%",
+            }
+          } />
+        <div
+          className="column__preview"
+          style={
+            Object {
+              "backgroundColor": "#aaa",
+              "border": "4px solid #ccc",
+              "boxSizing": "border-box",
+              "float": "left",
+              "height": "38px",
+              "width": "50%",
+            }
+          } />
+      </div>
+    </div>
+    <button
+      onClick={[Function]}>
+      Choose this template
+    </button>
+  </div>
+  <a
+    onClick={[Function]}
+    style={Object {}}>
+    Go Customize newsletter
+  </a>
+</div>
+`;

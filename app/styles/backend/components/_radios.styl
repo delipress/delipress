@@ -1,0 +1,30 @@
+.delipress__radio
+    color text-color
+    display flex
+    align-items center
+
+.delipress__radio:before
+    content ''
+    display inline-block
+    vertical-align middle
+    width 16px
+    height 16px
+    border-radius 50%
+    margin-right 8px
+    border 2px solid text-color
+    transition base-transition
+    cursor pointer
+
+.delipress__radio:hover:before
+    border-color #5AA6C9
+
+input[type=radio].delipress__radio__input
+    display none
+
+input[type=radio]:checked + .delipress__radio
+    color wp-text-color
+
+input[type=radio]:checked + .delipress__radio:before
+    background link-color
+    box-shadow inset 0 0 0 2px white
+    border-color link-color

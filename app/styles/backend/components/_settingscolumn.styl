@@ -1,0 +1,141 @@
+// Column individual setting
+.delipress__builder__columns__choice
+    display flex
+    flex-wrap wrap
+    align-items center
+    padding 10px
+
+    .delipress__builder__column
+        flex 0 0 45%
+        margin 10px 2.5%
+        opacity .4
+        cursor pointer
+        transition base-transition
+
+        &:hover
+            opacity .6
+
+        &:active
+            opacity 1
+
+        &.is-active
+            opacity 1
+
+
+    .delipress__builder__column__wrap
+        height 65px
+        padding 4px
+        border-radius radius
+        border 3px solid #FFF
+        margin-bottom 5px
+        box-shadow 0 0 0 1px text-color
+
+    .delipress__builder__column--half // [50, 50]
+        .delipress__builder__column__wrap
+            background linear-gradient(to right, text-color 0%, text-color 49%, #FFF 49%, #FFF 51%, text-color 51%, text-color 100%)
+
+    .delipress__builder__column--two_third_left // [33, 66]
+        .delipress__builder__column__wrap
+            background linear-gradient(to right, text-color 0%, text-color 32%, #FFF 32%, #FFF 34%, text-color 34%, text-color 100%)
+        .delipress__builder__sizes
+            span
+                flex none
+                width 33%
+
+            span + span
+                width 66%
+
+    .delipress__builder__column--two_third_right // [66, 33]
+        .delipress__builder__column__wrap
+            background linear-gradient(to left, text-color 0%, text-color 32%, #FFF 32%, #FFF 34%, text-color 34%, text-color 100%)
+        .delipress__builder__sizes
+            span
+                flex none
+                width 66%
+
+            span + span
+                width 33%
+
+
+    .delipress__builder__column--one_quarter_left // [25, 75]
+        .delipress__builder__column__wrap
+            background linear-gradient(to right, text-color 0%, text-color 24%, #FFF 24%, #FFF 26%, text-color 26%, text-color 100%)
+        .delipress__builder__sizes
+            span
+                flex none
+                width 25%
+
+            span + span
+                width 75%
+
+
+    .delipress__builder__column--one_quarter_right // [75, 25]
+        .delipress__builder__column__wrap
+            background linear-gradient(to left, text-color 0%, text-color 24%, #FFF 24%, #FFF 26%, text-color 26%, text-color 100%)
+        .delipress__builder__sizes
+            span
+                flex none
+                width 75%
+
+            span + span
+                width 25%
+
+    .delipress__builder__column--third // [33.333, 33.333, 33.333]
+        .delipress__builder__column__wrap
+            background linear-gradient(to right, text-color 0%, text-color 32%, #FFF 32%, #FFF 34%, text-color 34%, text-color 66%, #FFF 66%, #FFF 68%, text-color 68%, text-color 100%)
+        .delipress__builder__sizes
+            span
+                flex none
+                width 33%
+
+    .delipress__builder__column--half_middle // [25, 50, 25]
+        .delipress__builder__column__wrap
+            background linear-gradient(to right, text-color 0%, text-color 24%, #FFF 24%, #FFF 26%, text-color 26%, text-color 74%, #FFF 74%, #FFF 76%, text-color 76%, text-color 100%)
+        .delipress__builder__sizes
+            span
+                flex none
+                width 25%
+
+            span + span
+                width 50%
+
+            span + span + span
+                width 25%
+
+    .delipress__builder__column--half_left // [50, 25, 25]
+        .delipress__builder__column__wrap
+            background linear-gradient(to right, text-color 0%, text-color 49%, #FFF 49%, #FFF 51%, text-color 51%, text-color 74%, #FFF 74%, #FFF 76%, text-color 76%, text-color 100%)
+        .delipress__builder__sizes
+            span
+                flex none
+                width 50%
+
+            span + span
+                width 25%
+
+    .delipress__builder__column--half_right // [25, 25, 50
+        .delipress__builder__column__wrap
+            background linear-gradient(to left, text-color 0%, text-color 49%, #FFF 49%, #FFF 51%, text-color 51%, text-color 74%, #FFF 74%, #FFF 76%, text-color 76%, text-color 100%)
+        .delipress__builder__sizes
+            span
+                flex none
+                width 25%
+
+            span + span + span
+                width 50%
+
+    .delipress__builder__column--quarter // [25, 25, 25, 25
+        .delipress__builder__column__wrap
+            background linear-gradient(to right, text-color 0%, text-color 23%, #FFF 23%, #FFF 25%, text-color 25%, text-color 48%, #FFF 48%, #FFF 50%, text-color 50%, text-color 73%, #FFF 73%, #FFF 75%, text-color 75%, text-color 100%)
+        .delipress__builder__sizes
+            span
+                flex none
+                width 25%
+
+    .delipress__builder__sizes
+        display flex
+        justify-content center
+
+        span
+            text-align center
+            flex 1

@@ -1,0 +1,123 @@
+label
+    color wp-text-color
+
+
+.delipress__input[type="text"]
+.delipress__input[type="email"]
+.delipress__input[type="url"]
+.delipress__input[type="password"]
+.delipress__input[type="date"]
+.delipress__input[type="datetime"]
+.delipress__input[type="number"]
+.delipress__multiselect
+.delipress__select
+.delipress__input
+    width 100%
+    max-width 100%
+    border 2px solid neutral
+    border-radius radius
+    padding pad-xs
+    margin 0
+    color text-color
+    box-shadow none
+    font-weight 500
+    height input-height
+
+    &:disabled
+        background #E0E0E0
+
+    &::placeholder
+        color lighten(text-color, 50%)
+        font-weight 300
+
+    &:focus
+        border-color focus-color
+        box-shadow none
+
+    &.delipress__input--error
+        border-color brand-1
+
+textarea.delipress__input
+    height auto
+
+.delipress__input[type=file]
+    margin 6px 0
+    border 2px solid neutral
+    border-radius radius
+    padding 10px !important
+    font-size .9em
+
+.delipress__settings__item .delipress__input-reveal
+    display none
+
+    .delipress__input
+        flex none
+        width 50px
+        text-align right
+        padding 4px
+        height input-height *0.8
+
+    .delipress__numberinput__suffix
+        line-height input-height *0.8
+
+    &.delipress__is-visible
+        display inherit
+
+
+.delipress__input--error
+    border-color brand-1
+
+// Standard select
+select.delipress__input
+    width 100%
+    height input-height
+    padding pad-xs
+    line-height 1
+
+// Select 2
+.delipress select
+    min-width 250px
+
+// override a WP admin style
+.delipress__input input[type=number]
+    height auto
+
+// Input modifiers
+.delipress__input--short
+    width 60px
+
+.delipress__input--medium
+    width 50%
+
+// Image input
+.delipress .delipress__imageinput
+    display block
+    margin-right 10px
+    max-width 200px
+
+
+// Inputs with prefix/suffix
+.delipress__specialinput
+    width 100%
+    background neutral
+    display flex
+    border-radius radius
+
+    input
+        flex 1
+
+.delipress__specialinput__prefix
+.delipress__specialinput__suffix
+    text-align center
+    line-height input-height
+    padding 0 12px
+    min-width 40px
+    -webkit-user-select none
+    -moz-user-select none
+    -ms-user-select none
+    user-select none
+
+// Other sizes
+
+.delipress__smallinput
+    max-width 250px

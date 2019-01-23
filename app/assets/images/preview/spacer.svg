@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>spacer</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Spacer" transform="translate(-16.000000, -20.000000)">
+            <rect id="Rectangle" fill="#32373C" x="16" y="20" width="199.997406" height="200" rx="2"></rect>
+            <g id="editor-insertmore" transform="translate(79.000000, 79.000000)" fill-rule="nonzero" fill="#8BA0AA">
+                <path d="M80.9748535,81 L80.9748535,63.0136719 L80.9748535,57.9686279 L0.977294922,57.9686279 L0.977294922,63.0136719 L0.977294922,81 L80.9748535,81 Z M81,0.96862793 L81,18.9549561 L81,24 L0.977294922,24 L0.977294922,18.9549561 L0.977294922,0.96862793 L81,0.96862793 Z M34.4772949,43.9686279 L40.7272949,50.2186279 L46.9772949,43.9686279 L49.4772949,45.2186279 L40.7272949,53.9686279 L31.9772949,45.2186279 L34.4772949,43.9686279 Z M34.4772949,38.9686279 L31.9772949,37.7186279 L40.7272949,28.9686279 L49.4772949,37.7186279 L46.9772949,38.9686279 L40.7272949,32.7186279 L34.4772949,38.9686279 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

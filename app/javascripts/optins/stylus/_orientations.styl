@@ -1,0 +1,66 @@
+space_image = 40%
+
+#DELI-Optin.DELI-Orientation
+  @media screen and (min-width: 500px)
+      .DELI-wrapper--left-image, .DELI-wrapper--right-image
+        //padding-left space_image
+        position relative
+        align-items flex-end
+        overflow hidden
+        min-height 180px
+
+        .DELI-wrapper-image
+          position absolute
+          left 1em
+          width (space_image - 3em)
+          flex 0 0 space_image
+          display flex
+          flex-direction: column
+          top 50%
+          transform translateY(-50%)
+
+          img
+            flex 1
+
+        .DELI-textBloc, .DELI-formBloc
+            flex 0 0 (100% - space_image)
+            width (100% - space_image)
+            padding-left 1em
+            padding-right 1em
+
+      .DELI-wrapper--right-image
+        align-items flex-start
+
+        .DELI-wrapper-image
+          left auto
+          right 1em
+
+      .DELI-wrapper--left-content, .DELI-wrapper--right-content
+        flex-direction row
+        padding-top 3em
+        padding-bottom 3em
+
+        .DELI-wrapper-image
+          display none
+
+      .DELI-wrapper--right-content
+        .DELI-textBloc
+          order 2
+
+      .DELI-wrapper--no-image
+
+        .DELI-wrapper-image
+          display none
+
+      .DELI-wrapper--content-first
+        .DELI-textBloc
+          order -1
+
+      .DELI-wrapper--image-last
+        .DELI-wrapper-image
+          order 1
+
+      .DELI-wrapper--full-width
+        .DELI-formBloc
+          & > *
+            width 100%

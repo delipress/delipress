@@ -1,0 +1,89 @@
+.delipress__notice
+    color white
+    padding 10px pad-s
+    cursor pointer
+    display flex
+    align-items center
+
+    p
+        margin 0
+        font-size 15px
+        display inline-block
+        animation delipress-notice 1s ease-out forwards
+        margin-right 1rem
+
+    span
+        margin-right 4px
+        vertical-align middle
+        transform translateY(-2px)
+
+    p, ul
+        a
+            text-decoration underline
+
+.delipress__notice--info
+    background link-color
+
+.delipress__notice--ok
+    background save-color
+
+.delipress__notice--wrong
+    background brand-1
+
+.delipress__notice__actions
+    padding-left 1rem
+
+.delipress__notice--mailchimp, .delipress__notice--mailjet, .delipress__notice--sendgrid, .delipress__notice--sendinblue
+    color wp-text-color
+    padding-top 40px
+    position relative
+    border 4px solid #6FC5DC
+
+    .delipress__notice__esp
+        background-color #6FC5DC
+
+.delipress__notice--mailjet
+    border-color #FEBF3E
+
+    .delipress__notice__esp
+        background-color #FEBF3E
+
+.delipress__notice--sendgrid
+    border-color: #4eb1de
+
+    .delipress__notice__esp
+        background-color #4eb1de
+
+.delipress__notice__esp
+    position absolute
+    top 0
+    left 0
+    right 0
+    height 40px
+    background-color dark
+    display flex
+    align-items center
+    padding 4px 10px
+
+    img
+        height 30px
+        width auto
+
+    span
+        margin 0
+        padding 0 pad-s
+        font-weight 500
+        flex auto
+        color white
+
+    a
+        display block
+        color white
+        font-size 24px
+        transform translateY(-3px)
+
+
+@keyframes delipress-notice
+    0%
+        opacity 0
+        transform translateX(-10px)

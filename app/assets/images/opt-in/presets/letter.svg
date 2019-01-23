@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="204px" height="204px" viewBox="0 0 204 204" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+    <title>letter</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="letter">
+            <circle id="Oval" fill-opacity="0.2" fill="#FFFFFF" cx="102" cy="102" r="102"></circle>
+            <polygon id="Fill-2839" fill="#F0F0F0" points="168.347577 152.03125 35.0822704 152.03125 35.0822704 52.0822704 168.347577 52.0822704"></polygon>
+            <path d="M114.163777,90.9905341 C111.002891,87.4340163 106.47187,85.3975558 101.713882,85.3975558 C96.9558945,85.3975558 92.424874,87.4340163 89.2639876,90.9905341 L35.0812293,151.944836 L168.346535,151.944836 L114.163777,90.9905341 Z" id="Fill-2840" fill="#E2E4E5"></path>
+            <path d="M89.2639876,113.038446 C92.424874,116.594964 96.9558945,118.629342 101.713882,118.629342 C106.47187,118.629342 111.002891,116.594964 114.163777,113.038446 L168.346535,52.0820622 L35.0812293,52.0820622 L89.2639876,113.038446 Z" id="Fill-2841" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>

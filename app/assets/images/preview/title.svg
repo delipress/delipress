@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>title</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Title" transform="translate(-20.000000, -20.000000)">
+            <rect id="Rectangle" fill="#32373C" x="20" y="20" width="199.997406" height="200" rx="2"></rect>
+            <g id="heading" transform="translate(89.000000, 80.000000)" fill-rule="nonzero" fill="#8BA0AA">
+                <polygon id="Shape" points="46.1538462 0 46.1538462 32 15.3846154 32 15.3846154 0 0 0 0 80 15.3846154 80 15.3846154 48 46.1538462 48 46.1538462 80 61.5384615 80 61.5384615 0"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

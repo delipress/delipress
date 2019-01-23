@@ -1,0 +1,12 @@
+node_modules
+bower_components
+public
+vendor
+coverage
+delipress.zip
+./delipress
+.DS_Store
+/npm-debug.log
+/.env
+yarn-error.log
+*.po~

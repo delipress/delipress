@@ -1,0 +1,38 @@
+.delipress__switch
+    position relative
+    width 80px
+    display flex
+    background neutral
+    border-radius radius
+    color text-color
+
+    -moz-user-select none
+    -ms-user-select none
+    user-select none
+
+.delipress__switch__off
+.delipress__switch__on
+    flex 1
+    text-align center
+    padding 8px 0
+
+.delipress__switch__slider
+    position absolute
+    margin 3px
+    top 0
+    left 0
+    width calc(50% - 3px)
+    height calc(100% - 6px)
+    background white
+    border-radius 2px
+    transition .2s all ease-out
+
+.delipress__switch__input:checked + label
+    background save-color
+    color white
+
+    .delipress__switch__slider
+        left calc(50% - 3px)
+
+input.delipress__switch__input
+    display none

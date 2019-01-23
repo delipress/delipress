@@ -1,0 +1,181 @@
+// ============================
+// = Premium incentive styles =
+// ============================
+
+.delipress__premium-bloc
+    margin 20px 0
+    overflow hidden
+
+    &.delipress__premium-bloc--line
+        margin 40px 0 0
+
+        p
+            margin 0
+
+        .delipress__f1:last-of-type
+            text-align right
+
+
+.delipress__premium-bloc__wrap
+    padding pad-s
+    max-width 380px
+    width 100%
+    //background-color rgba(neutral, 60%)
+    //border 3px solid brand-2
+    border 1px solid rgba(0, 0, 0, .05)
+    border-radius radius
+    overflow hidden
+    background-color rgba(neutral, 50%)
+
+// .delipress__premium-bloc--line 
+//     .delipress__premium-bloc__wrap
+//         padding pad-xs
+//         max-width: 100%
+//     .delipress__premium-bloc__title
+//         .dashicons
+//             font-size: 1.3em
+//     .delipress__premium-bloc__content
+//         padding-left: 28px
+
+.delipress__premium-bloc--line .delipress__premium-bloc__wrap
+    padding pad-xs
+    max-width 100%
+
+.delipress__premium-bloc__title
+    display flex
+    align-items center
+    font-size 18px
+
+    .dashicons
+        font-size 1.5em
+        width 1em
+        height 1em
+        margin-right 4px
+        display inline-block
+        color premium-color
+
+    h3
+        margin 0
+        font-size .8em
+
+.delipress__premium-bloc__content
+    padding-left 32px
+
+    p
+        line-height 1.6
+
+    strong
+        color brand-2
+
+// list
+.delipress__premium-bloc--list
+    // border-top 2px solid brand-2
+    // border-bottom 2px solid brand-2
+    // margin-top -1px
+    align-items center
+    background-color rgba(neutral, 50%)
+
+    strong
+        font-weight 600
+
+    .dashicons-awards
+        color premium-color
+
+    & > div
+        padding 0 10px
+
+
+// Collection item
+.delipress__premium__collection-item, .delipress__new-list-choices__block, .delipress__new-list-choices__item
+    position relative
+
+    &:hover
+        .delipress__premium__collection-item__stamp
+            opacity 1
+            transform scale(1)
+            @supports not (filter: blur(4px))
+                background rgba(0, 0, 0, .85)
+                color #FFF
+
+        .delipress__premium__blur
+            filter blur(4px)
+
+
+.delipress__premium__collection-item__stamp
+    position absolute
+    left 0
+    right 0
+    bottom 0
+    top 0
+    z-index 2
+    display flex
+    flex-direction column
+    justify-content center
+    align-items center
+
+    .delipress__center-all
+        background-color white
+        box-shadow 0 4px 10px rgba(0, 0, 0, .1)
+        padding pad-s pad-xs
+        margin 10px
+        border-radius radius
+        display flex
+        flex-direction column
+        align-items center
+        justify-content center
+
+    span
+        font-size 12px
+        text-align center
+        font-weight 500
+        color text-color
+
+    opacity 0
+    transform-origin center center
+    transform scale(0)
+    transition transform .375s cubic-bezier(0.000, 1, 0.390, 1), opacity .375s cubic-bezier(0.000, 1, 0.390, 1)
+
+    .delipress__button
+        margin-bottom 5px
+
+
+// .delipress__premium__blur
+//     transition filter .375s cubic-bezier(0.000, 1, 0.390, 1)
+//
+//
+.delipress__premium-only
+    position absolute
+    right 4px
+    top 4px
+    font-size 12px
+    display inline-block
+    padding 3px 5px 2px 5px
+    border-radius radius
+    background-color premium-color
+    color white
+    font-weight 300
+    z-index 2
+
+
+// Premoium count
+.delipress__premium-bloc--count
+    align-self center
+    margin-left 150px
+
+.delipress__premium-bloc--count__top, .delipress__premium-bloc--count__bottom
+    display flex
+    justify-content space-between
+    align-items center
+
+.delipress__premium-bloc--count__bar
+    width 100%
+    height 8px
+    border-radius radius
+    background-color neutral
+    margin 6px 0
+
+    span
+        height 8px
+        border-radius radius
+        display block
+        background-color brand-2

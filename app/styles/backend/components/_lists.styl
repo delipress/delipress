@@ -1,0 +1,489 @@
+// Vertical standard lists (campaigns, lists, reports, automation)
+.delipress__list
+    margin pad-m 0
+
+.delipress__list__content
+    border-top 1px solid neutral
+
+    // li
+    //     margin-bottom 8px
+
+
+.delipress__list__item
+    margin 0
+    border-bottom 1px solid neutral
+    position relative
+
+    .delipress__list__item__progress
+        position absolute
+        left 0
+        right 0
+        bottom 0
+        background lighten(neutral, 30%)
+        color rgba(0, 0, 0, .6)
+        padding 5px 5px 5px 45px
+        font-size .9em
+
+        .dashicons
+            font-size 16px
+            width 16px
+            height 16px
+            line-height 16px
+
+    .delipress__list__item__update
+        color brand-3
+
+.delipress__list__item--syncing
+    padding-bottom 30px
+    background lighten(neutral, 70%)
+    border-left 1px solid neutral
+    border-right 1px solid neutral
+
+.delipress__list__item > div
+    padding pad-xs
+
+.delipress__list_item--no-mobile
+    @media screen and (max-width: 1300px)
+        display none
+
+.delipress__list__item__col-box
+    width 38px
+
+
+
+.delipress__list__item__standard
+    strong
+    a
+        font-weight normal
+        color wp-text-color
+
+.delipress__list__item__copy
+    display flex
+
+    input
+        flex 1
+        background-color #fff
+        padding .3rem .5rem
+        border-radius radius
+        margin-right .3rem
+        box-shadow none
+
+.delipress__list__item__col-actions
+    text-align right
+
+    .delipress__button .dashicons
+        font-size 17px
+        transform translateX(-2px)
+
+.delipress__list__item__title
+    font-size 16px
+    color link-color
+    font-weight 500
+
+    &.delipress__list__item__no-subscriber
+        color text-color
+        font-weight 400
+
+.delipress__list__item__subtitle
+    font-size 12px
+    display flex
+    align-items center
+    color lighten(text-color, 40%)
+
+    .dashicons
+        font-size 14px
+        transform translateY(2px)
+
+.delipress__list__item__num
+    font-size 16px
+    color wp-text-color
+
+.delipress__list__item__color
+    display inline-block
+    width 12px
+    height 12px
+    border-radius 12px
+    transform translateY(2px)
+
+.delipress__list__nothing
+    padding pad-s pad-xs
+    border-bottom 1px solid neutral
+
+    .dashicons
+        transform translateY(-1px)
+
+.delipress__list__footer
+    display flex
+    align-items center
+
+.delipress__list__footer__item
+    flex-shrink 1
+    padding 0 pad-xs
+
+.delipress__list__footer__pagination
+    flex 1
+    text-align right
+
+
+// Horizontal lists (templates, optins forms)
+.delipress__collection
+    display flex
+    flex-wrap wrap
+    margin -20px
+
+.delipress__collection__item
+    width calc(25% - 40px)
+    margin 20px
+    color text-color
+    border 1px solid neutral
+    border-radius radius
+    overflow hidden
+    display flex
+    flex-direction column
+    cursor pointer
+
+    p
+        margin 0
+
+    h3
+        margin 8px 0
+
+.delipress__collection__item__date
+    font-size 11px
+    opacity .8
+    display block
+    margin-top -5px
+
+.delipress__collection__item__thumb
+    position relative
+    height 130px
+    border-bottom 1px solid neutral
+    background-size cover
+    background-position center
+
+    &:hover .delipress__collection__item__thumb__hover
+        opacity 1
+
+.delipress__collection__item__thumb__hover
+    position absolute
+    left 0
+    top 0
+    right 0
+    bottom 0
+    display flex
+    flex-direction column
+    justify-content center
+    align-items center
+    color #F2F2F2
+    font-size 14px
+    background-color rgba(0, 0, 0, .6)
+    opacity 0
+    transition all .2s
+
+.delipress__collection__item__subject
+    margin 10px 0
+    font-size 15px
+
+.delipress__collection__item__picture
+    position relative
+    text-align center
+    height 130px
+    border-bottom 1px solid neutral
+    background radial-gradient(ellipse at center, white 58%, #F1F1F1 100%);
+
+    img
+        display block
+        position absolute
+        width 70%
+        top 50%
+        left 50%
+        transform translate(-50%, -50%)
+
+.delipress__collection__item__content
+    padding pad-xs
+    flex auto
+
+    .delipress__center
+        margin-top 1rem
+
+.delipress__collection__item__actions
+    padding pad-xs
+    text-align center
+
+.delipress__collection--narrow
+    margin -10px
+
+    .delipress__collection__item
+        width calc(20% - 20px)
+        margin 10px
+
+.delipress__collection--small
+    margin -10px
+
+    .delipress__collection__item
+        width calc(33.333% - 20px)
+        margin 10px
+
+
+// Template thumb simulation
+.delipress__minitemplate
+    position relative
+    padding 20px
+
+.delipress__minitemplate__page
+    width 100px
+    margin 0 auto
+    background white
+
+.delipress__minitemplate__header
+.delipress__minitemplate__footer
+    height 20px
+
+.delipress__minitemplate__content
+    height  80px
+
+.delipress__minitemplate__colors
+    position absolute
+    top 50%
+    transform translateY(-50%)
+    left 10px
+    background white
+    border-radius 30px
+    padding 1px
+
+.delipress__minitemplate__circle
+    width 16px
+    height 16px
+    border-radius 50%
+    margin 4px
+
+// Optin thumb simulation
+.delipress__minioptin
+    background neutral
+    padding 20px
+    position relative
+    height 140px
+    overflow hidden
+    display flex
+    align-items center
+    justify-content center
+
+.delipress__minioptin__page
+    display flex
+    margin 0 auto
+    width 80%
+
+.delipress__minioptin__content
+.delipress__minioptin__sidebar
+    height 100px
+    background white
+    border-radius radius
+    margin 0 5px
+
+.delipress__minioptin__content
+    flex 3
+    padding 4px
+
+.delipress__minioptin__sidebar
+    flex 1
+    padding 4px
+
+.delipress__minioptin__popup
+    position absolute
+    top 30%
+    left 30%
+    width 40%
+    height 40%
+    border-radius radius
+    background link-color
+    box-shadow 0 3px 0 1px rgba(0,0,0, .1)
+
+.delipress__minioptin__bar
+    position absolute
+    top 0
+    left 0
+    right 0
+    height 10px
+    background link-color
+    box-shadow 0 2px 0 1px rgba(0,0,0, .1)
+
+.delipress__minioptin__flyin
+    position absolute
+    bottom 0
+    right 0
+    height 50px
+    width 50px
+    background link-color
+    border-radius radius
+    box-shadow -1px -1px 0 1px rgba(0,0,0, .1)
+
+.delipress__minioptin__widget
+    width 100%
+    background link-color
+    height 20px
+    border-radius 2px
+
+.delipress__minioptin__aftercontent
+    width 100%
+    background link-color
+    height 20px
+    border-radius 2px
+    margin-top 72px
+
+.delipress__minioptin__lockedcontent
+    width 100%
+    background link-color
+    padding 10px 0
+    border-radius 2px
+    margin-top 30px
+    text-align center
+
+    span
+        color white
+
+.delipress__minioptin__block
+    float left
+    position relative
+    width calc(33.333% - 10px)
+    background white
+    margin 5px
+    height 40px
+    border-radius radius
+
+.delipress__minioptin__block__inte
+    position absolute
+    bottom 5px
+    left 5px
+    width 10px
+    height 10px
+    background link-color
+    border-radius 2px
+
+
+.delipress__minioptin__comment
+    position relative
+    width 100%
+    height 60px
+    margin 20px 10px 0
+    background white
+    border-radius radius
+
+    &:after
+        content ''
+        display block
+        position absolute
+        top 100%
+        right 20px
+        width 0
+        height 0
+        border-left 10px solid transparent
+        border-right 10px solid transparent
+        border-top 10px solid white
+
+.delipress__minioptin__shortcode
+    width 100%
+    background white
+    border-radius radius
+    color wp-text-color
+    padding 10px 0
+    font-size 1.3em
+    font-weight 300
+    text-align center
+
+// optin color thumb
+.delipress__minioptincolor
+    background #333
+    height 140px
+
+
+// New lists choices
+
+.delipress__new-list-choices
+    display flex
+
+.delipress__new-list-choices__col
+    flex 1
+    padding pad-xs
+
+    h2
+        margin-top 0
+
+.delipress__new-list-choices__block
+    display block
+    border-radius radius
+    margin-bottom pad-s
+    background lighten(neutral, 40%)
+    text-align center
+    padding pad-m
+    position relative
+
+    h3
+        margin 0
+        line-height 1.3
+
+    p
+        color text-color
+        font-size 15px
+
+.delipress__new-list-choices__block__picto--1
+    background brand-1
+
+.delipress__new-list-choices__block__picto--2
+    background brand-2
+
+.delipress__new-list-choices__block__picto--3
+    background brand-3
+
+.delipress__new-list-choices__block__picto--4
+    background link-color
+
+.delipress__new-list-choices__block__picto
+    margin 0 auto pad-s auto
+    font-size 50px
+    width 1em
+    height 1em
+    border-radius 50%
+    text-align center
+
+    span
+        font-size .6em
+        width 1em
+        height 1em
+        line-height 1.66em
+        color white
+        transform translateY(1px)
+
+
+.delipress__new-list-choices__item
+    display flex
+    align-items center
+    border-radius radius
+    margin-bottom pad-s
+    background lighten(neutral, 40%)
+    padding pad-s
+
+    .delipress__premium__blur
+        display flex
+        align-items center
+
+    h3
+        margin 0
+        line-height 1.3
+
+    p
+        color text-color
+        font-size 15px
+        margin 5px 0 0 0
+        font-size 1em
+
+.delipress__new-list-choices__item__picto
+    span
+        font-size 32px
+        width 32px
+        height 32px
+        line-height 32px
+        color text-color
+
+.delipress__new-list-choices__item__content
+    flex 1
+    margin-left pad-s

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>column-4</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Column-4" transform="translate(-20.000000, -20.000000)">
+            <rect id="Rectangle" fill="#32373C" x="20" y="20" width="199.997406" height="200" rx="2"></rect>
+            <path d="M80,99.0071897 C80,96.7940799 81.7830797,95 83.9945832,95 L156.005417,95 C158.211564,95 160,96.7942683 160,99.0071897 L160,140.99281 C160,143.20592 158.21692,145 156.005417,145 L83.9945832,145 C81.7884358,145 80,143.205732 80,140.99281 L80,99.0071897 Z M82,101.001728 L82,138.998272 C82,141.210864 83.7885255,143 85.9947834,143 L100,143 L100,97 L85.9947834,97 C83.7917156,97 82,98.7916349 82,101.001728 Z M102,97 L102,143 L119,143 L119,97 L102,97 Z M121,97 L121,143 L138,143 L138,97 L121,97 Z M140,97 L140,143 L154.005217,143 C156.208284,143 158,141.208365 158,138.998272 L158,101.001728 C158,98.7891365 156.211475,97 154.005217,97 L140,97 Z" id="Combined-Shape" fill="#8BA0AA"></path>
+        </g>
+    </g>
+</svg>

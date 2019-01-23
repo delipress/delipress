@@ -1,0 +1,85 @@
+.delipress__numberinput-select
+    min-width 176px
+    display flex
+    background neutral
+    align-items center
+    padding 2px
+    height input-height*.8
+    border-radius: radius
+
+    .delipress__input[type="number"]
+        height input-height*.7
+        width 50px
+        text-align right
+        padding 0
+
+    select
+        height input-height*.7 - 1px
+        transform: translateY(-1px)
+
+.delipress__numberinput
+    width 7em
+    display flex
+
+    // Emphasis increment buttons on hovering component
+    &:hover .delipress__numberinput__increment
+        opacity .7
+
+    .delipress__input
+        flex 1
+        border-radius radius
+        text-align right
+
+        // Emphasis increment buttons on field focus
+        &:focus ~ .delipress__numberinput__increment
+            opacity .7
+
+        // Blue all the things
+        &:focus ~ .delipress__numberinput__controls
+            border-color focus-color
+
+        &:focus ~ .delipress__numberinput__suffix
+            background focus-color
+            color white
+
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button
+        // -webkit-appearance none
+        margin 0
+
+    // input[type=number]
+        // -moz-appearance textfield
+
+// .delipress__numberinput__controls
+//     width 17px
+//     border-top 2px solid neutral
+//     border-bottom 2px solid neutral
+//     border-right 2px solid neutral
+//     border-radius 0 radius radius 0
+//
+// .delipress__numberinput__increment
+//     font-size 10px
+//     width 25px
+//     height 20px
+//     display flex
+//     align-items center
+//     justify-content center
+//     background-color neutral
+//     opacity .3
+//     transition opacity .12s ease-in
+//     cursor pointer
+//
+//     &:active
+//         opacity 1 !important
+
+.delipress__numberinput__suffix
+    text-align center
+    line-height 40px
+    display inline-block
+    padding 0 6px
+    min-width 28px
+    background neutral
+    border-top-right-radius radius
+    border-bottom-right-radius radius
+    user-select none
+    margin-left -2px

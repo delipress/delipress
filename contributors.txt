@@ -1,0 +1,9 @@
+This file contains a list of people who have made large contributions to the public version of DeliPress.
+
+Developers:
+- Thomas Deneulin : thomas@delipress.io / @TDeneulin
+- Thierry Le Moulec : thierry@delipress.io / @thierrylemoulec
+- Maxime Bernard-Jacquet : maxime@delipress.io / @Maximebj
+
+Translators:
+- English: Vincent Dubroeucq / @VinceDubroeucq

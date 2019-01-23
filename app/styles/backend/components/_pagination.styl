@@ -1,0 +1,39 @@
+.delipress__pagination
+    margin 0
+    padding 0 pad-xs
+
+    li
+        display inline-block
+        margin-bottom 0
+
+.delipress__pagination__item
+    display inline-block
+    background white
+    border 1px solid neutral
+    border-radius radius
+    color text-color
+    line-height 1
+    font-size .8em
+    padding 8px
+    transition background .12s linear, border-color .12s linear, color .12s linear
+    min-width 30px
+    text-align center
+
+    .dashicons
+        width 12px
+        height 12px
+        font-size 12px
+
+    &:hover, &:focus
+        background link-color
+        border-color link-color
+        color white
+
+    &:active
+        background darken(link-color, 10%)
+        border-color link-color
+        color white
+
+.delipress__pagination__item--is-active
+    background neutral
+    font-weight bold

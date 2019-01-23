@@ -1,0 +1,53 @@
+.delipress__buttonsgroup
+    display flex
+
+.delipress__buttonsgroup--align
+    width 120px
+
+.delipress__buttonsgroup--large
+    width: 100%
+
+.delipress__buttonsgroup__cell
+    text-align center
+    flex 1
+    cursor pointer
+    color text-color
+    transition base-transition
+    line-height 42px
+
+    label
+        background neutral
+        border-right 2px solid white
+        padding 0 8px
+
+    svg
+        width 26px
+        height auto
+        vertical-align middle
+
+    &:hover
+        color wp-text-color
+
+    &:first-child label
+        border-top-left-radius radius
+        border-bottom-left-radius radius
+
+    &:last-child label
+        border-top-right-radius radius
+        border-bottom-right-radius radius
+
+    label
+        display block
+        color rgba(0,0,0,.6)
+
+    input[type=radio]
+        display none
+
+    input[type=radio]:checked + label
+        position relative
+        background link-color
+        color white
+        font-weight 600
+
+        path
+            fill #FFF

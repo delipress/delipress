@@ -1,0 +1,51 @@
+.delipress__task
+    display inline-block
+    width 18px
+    height 18px
+    border 2px solid neutral
+    border-radius 50%
+    overflow hidden
+    color white
+
+    .dashicons
+        width 14px
+        height 14px
+        font-size 14px
+
+    &.delipress__task--done
+        background brand-3
+        border-color brand-3
+
+        .dashicons
+            transform translateX(-1px)
+
+
+    &.delipress__task--fail
+        background brand-1
+        border-color brand-1
+
+    &.delipress__task--sync
+        background premium-color
+        border-color premium-color
+
+.delipress__task-list
+    padding-left 1.4em
+    list-style-type disc
+
+.delipress__task__help-message
+    display block
+    font-size .9em
+    padding 5px 8px
+    background-color neutral
+    border-radius radius
+    top 0
+    bottom 0
+
+// special cases
+
+.delipress__hero__todo .delipress__task
+    transform translateY(6px)
+    margin-right 6px
+
+.delipress__summary__datas__table .delipress__task
+    transform translateY(2px)

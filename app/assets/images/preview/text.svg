@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>text</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Text" transform="translate(-20.000000, -20.000000)">
+            <rect id="Rectangle" fill="#32373C" x="20" y="20" width="199.997406" height="200" rx="2"></rect>
+            <g id="text" transform="translate(80.000000, 85.000000)" fill-rule="nonzero" fill="#8BA0AA">
+                <path d="M80,0 L80,10 L0,10 L0,0 L80,0 Z M50,20 L50,30 L0,30 L0,20 L50,20 Z M80,20 L80,30 L60,30 L60,20 L80,20 Z M30,40 L30,50 L0,50 L0,40 L30,40 Z M80,40 L80,50 L40,50 L40,40 L80,40 Z M60,60 L60,70 L0,70 L0,60 L60,60 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,93 @@
+#adminmenu
+  .wp-submenu
+    a[href$="page=delipress-setup"]
+    a[href$="page=delipress-automation"]
+    a[href$="page=delipress-optin-forms"]
+        position relative
+        margin-bottom 10px
+
+        &:after
+            position absolute
+            content ""
+            display block
+            width 30px
+            height 1px
+            bottom -5px
+
+.admin-color-fresh #adminmenu .wp-submenu a:after
+    background #666
+
+.admin-color-light #adminmenu .wp-submenu a:after
+    background #ddd
+
+.admin-color-blue #adminmenu .wp-submenu a:after
+    background #85C7E0
+
+.admin-color-coffee #adminmenu .wp-submenu a:after
+    background #7F7068
+
+.admin-color-ectoplasm #adminmenu .wp-submenu a:after
+    background #755A9D
+
+.admin-color-midnight #adminmenu .wp-submenu a:after
+    background #555865
+
+.admin-color-ocean #adminmenu .wp-submenu a:after
+    background #739DAC
+
+.admin-color-sunrise #adminmenu .wp-submenu a:after
+    background #E14C46
+
+@font-face
+    font-family 'delipress'
+    src url('../fonts/delipress.ttf?9i0hls') format('truetype'), url('../fonts/delipress.woff?9i0hls') format('woff'), url('../fonts/delipress.svg?9i0hls#delipress') format('svg')
+    font-weight normal
+    font-style normal
+
+[class^="delipress-font-"]
+[class*=" delipress-font-"]
+#toplevel_page_delipress .wp-menu-image
+    font-family 'delipress'
+    speak none
+    font-style normal
+    font-weight normal
+    font-variant normal
+    text-transform none
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing antialiased
+    -moz-osx-font-smoothing grayscale
+
+[class^="delipress-font-"]
+[class*=" delipress-font-"]
+    line-height 1
+
+
+.delipress-font-donut:before
+#toplevel_page_delipress .wp-menu-image:before
+    font inherit
+    content "\1f369"
+    line-height inherit
+
+.delipress
+    &-font-spacer:before
+      content "\e900"
+      font-size .8em
+
+    &-font-text:before
+      content "\e901"
+
+    &-font-saved:before
+      content "\2713"
+
+    &-font-heading:before
+      content "\e903"
+
+    &-font-button:before
+      content "\e904"
+
+    &-icon-favicon-delipress:before
+      content "\1f369"
+
+.js-delipress-notice
+    display none

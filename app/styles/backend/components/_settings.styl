@@ -1,0 +1,261 @@
+.delipress__settings
+    margin-top pad-m
+
+    &.delipress__settings--behavior
+
+        .delipress__settings__item
+            height input-height*.8
+
+            &.delipress__settings__item-hauto
+                height auto
+
+
+.delipress__settings__item
+    margin 12px 0
+
+.delipress__settings__item__label
+    display flex
+    align-items center
+    font-size 1.1em
+    padding-right 16px
+
+    @media screen and (max-width: 1350px)
+        padding-right 6px
+
+    label
+        color wp-text-color
+
+.delipress__settings__item__label--top
+    align-self flex-start
+    padding-top 2px
+
+.delipress__settings__item__field
+    display flex
+    align-items center
+
+.delipress__settings__item__field--double
+    justify-content center
+    align-items flex-start
+    flex-direction column
+
+    @media only screen and (max-width: 1240px)
+        flex 9
+        justify-content flex-start
+
+
+    div + div
+        margin-top pad-s
+
+.delipress__settings__item__field-flex
+    display flex
+    align-items center
+
+.delipress__settings__item__help
+    display flex
+    justify-content center
+    flex-direction column
+    line-height 1.4
+    padding-left 16px
+    position relative
+
+    p
+        margin 6px 0 0 0
+
+.delipress__settings__item__help--double
+    justify-content flex-end
+    @media only screen and (max-width: 1240px)
+        flex none
+
+.delipress__settings__item--jump
+    margin-top pad-m
+
+.delipress__settings__item__error
+    position absolute
+    top 0
+    left 0
+    right 0
+    bottom 0
+    padding-left 16px
+    display flex
+    align-items center
+    background white
+    color brand-1
+
+    span + span
+        margin-left 4px
+
+#delipress-send-test
+    padding-top 12px
+    padding-bottom 12px
+
+.delipress__provider
+    display flex
+    border 1px solid neutral
+    border-radius radius
+    align-items center
+
+.delipress__provider__form
+    flex 1
+    padding pad-s
+
+    h3
+        margin-top pad-l
+
+.delipress__provider__form__letsconnect
+    text-align center
+
+    img
+        display inline-block
+        max-height 40px
+        max-width 160px
+        vertical-align middle
+        margin 0 4px
+
+    span
+        transform translateY(4px)
+
+.delipress__provider__help
+    flex 1
+    padding pad-s
+    background neutral
+
+    h3:first-child
+        margin-top 0
+
+
+// Special case : later field in campaign
+.delipress__settings__item__field__later
+    display inline-block
+    margin-left pad-s
+    position relative
+
+    span
+        position absolute
+        right 6px
+        top 21px
+        font-size 18px
+        color darken(neutral, 15%)
+        transform translateY(-50%)
+        pointer-events none
+
+    input
+        max-width 200px
+        background-color white
+
+.delipress__settings__item__field__timezone
+    opacity 0
+    transform translateX(5px)
+    transition .5s opacity ease-out, .5s transform ease-out
+    margin-left pad-s
+
+    @media only screen and (min-width: 1240px)
+        display none
+
+.delipress-screen-large .delipress__settings__item__field__timezone
+    display none
+
+    @media only screen and (min-width: 1240px)
+        display inline-block
+
+.delipress__settings__item__field__timezone.is-visible
+    opacity .7
+    transform translateX(0)
+
+/*
+    Use it later to make a progress bar for ESP plan consumption
+.delipress__provider__consumption
+    margin pad-s 0
+.delipress__provider__consumption__bar
+    background text-color
+    height 14px
+    border-radius 7px
+    overflow hidden
+.delipress__provider__consumption__bar__progress
+    min-width 30px
+    background-color brand-3
+    height 14px
+    line-height 14px
+    border-radius 7px
+    color white
+    text-align right
+    padding-right 8px
+    font-size 10px
+*/
+
+.delipress__bloc-premium
+    border 1px solid darken(neutral, 5%)
+    border-radius radius
+    align-items center
+
+    ul
+        margin 0
+        padding-left 2em
+        list-style-type disc
+
+    & > .delipress__f1
+        padding pad-s
+
+    h3:first-child
+        margin-top 0
+
+.delipress__bloc-premium__help
+    background-color neutral
+
+
+
+.delipress__settings__switch-everything
+    opacity .4
+    pointer-events none
+
+    &.delipress__is-visible
+        opacity 1
+        pointer-events all
+
+.delipress__settings__item__label label[for="display_all_everything"]
+    font-weight bold
+
+.delipress__settings
+    .delipress__is-disabled
+        opacity .4
+        pointer-events: none
+
+.delipress__settings__filters
+
+    .delipress__f2
+        padding 0 .5em
+        background-color neutral
+
+    .delipress__f10
+        padding 0 1em
+
+
+    .select2-container--default .select2-selection--multiple .select2-selection__choice
+        background-color neutral
+        border none
+        box-shadow 0 0 0 1px rgba(0, 0, 0, .1)
+
+    .select2-container--default .select2-selection--multiple
+        border 1px solid neutral
+
+.delipress__settings__filter__select
+    margin 0
+
+// Settings premium bloc
+.delipress__settings__premium-congrats
+    padding 2px 4px
+    text-align center
+    color: #FFF
+    border-radius: 0 radius radius 0
+    background-color premium-color
+    display flex
+    align-items center
+    justify-content center
+    position absolute
+    z-index 2
+    right 2px
+    height 38px
+
+    p
+        margin 4px
+        font-weight 600
+        font-size 12px

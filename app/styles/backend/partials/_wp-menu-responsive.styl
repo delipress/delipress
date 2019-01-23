@@ -1,0 +1,90 @@
+&.auto-fold
+  #wpcontent, #wpfooter
+	  margin-left 36px
+
+  #adminmenuback,
+	#adminmenuwrap,
+	#adminmenu,
+	#adminmenu li.menu-top
+	  width 36px
+
+  #adminmenu
+    .wp-submenu.sub-open,
+	  .opensub .wp-submenu,
+	  .wp-has-current-submenu .wp-submenu.sub-open,
+	  .wp-has-current-submenu.opensub .wp-submenu,
+	  a.menu-top:focus + .wp-submenu,
+	  .wp-has-current-submenu a.menu-top:focus + .wp-submenu
+  	  top 0px
+  	  left 36px
+
+    a.wp-has-current-submenu:focus + .wp-submenu,
+	  .wp-has-current-submenu .wp-submenu
+    	position absolute
+    	top -1000em
+    	margin-right -1px
+    	padding 7px 0 8px
+    	z-index 9999
+
+    .wp-has-current-submenu .wp-submenu
+	    min-width 150px
+	    width auto
+
+    .wp-has-current-submenu li > a
+	    padding-right 16px
+	    padding-left 14px
+
+    li.menu-top .wp-submenu > li > a
+	    padding-left 12px
+
+    .wp-menu-name
+	    position absolute
+	    left -999px
+
+    .wp-submenu-head
+	    display block
+
+    div.wp-menu-image
+    	height 30px
+    	width 34px
+    	position absolute
+    	z-index 25
+
+    a.menu-top
+	    height 34px
+
+    li.wp-menu-open
+	    border 0 none
+
+    .wp-has-current-submenu.menu-top-last
+	    margin-bottom 0
+
+    li.menu-top:hover,
+    li.opensub > a.menu-top,
+    li > a.menu-top:focus
+    	z-index 10000
+
+  ul#adminmenu
+    li:hover a.wp-has-current-submenu:after
+	    display none
+
+    li.wp-has-submenu.wp-not-current-submenu:hover:after
+    	border-width 4px
+    	margin-top -4px
+    	top 16px
+
+    a.wp-has-current-submenu:after,
+	  & > li a.current:after
+    	border-width 4px
+    	margin-top -4px
+
+
+  #collapse-menu .collapse-button-label
+	  display none
+
+	/* rtl:ignore */
+  #collapse-button .collapse-button-icon:after
+  	transform rotate(180deg)
+
+  &.rtl #collapse-button .collapse-button-icon:after
+  	transform none

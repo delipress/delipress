@@ -1,0 +1,1022 @@
+// Prepare page for correct height
+// We switch the global state from a fixed overflow wp menu to a fixed overflow delipress
+// Depending on the hover of the user
+.delipress-is-builder
+    #wpadminbar
+        z-index 45000
+    .delipress
+        width calc(100vw - 200px)
+        position fixed
+        left 180px
+        top 30px
+        bottom 0px
+        z-index 10001
+
+        @media only screen and (max-width: 1200px)
+            left 56px
+            width calc(100vw - 76px)
+
+    .delipress__content
+        padding 0
+        border-bottom-left-radius 0
+        border-bottom-right-radius 0
+
+    #wpbody-content
+        padding-bottom 0
+
+    #adminmenumain
+        position fixed
+        z-index 44000
+        overflow hidden
+
+    &.menu-scroll #adminmenumain
+        position relative
+
+    // Hide footer, not needed on this page
+    .delipress__footer, #wpfooter
+        display none
+
+    // Responsive menu breakpoint earlier
+    @media only screen and (max-width: 1200px)
+        @import './partials/_wp-menu-responsive'
+
+
+// ⭐️ DeliPress Builder
+
+.delipress__builder
+    position absolute
+    left 0px
+    right 0px
+    top 115px
+    bottom 0px
+    display flex
+    padding-top pad-s
+    background white
+    -ms-overflow-style -ms-autohiding-scrollbar
+
+    @media only screen and (max-width: 960px)
+        overflow-x scroll
+
+
+// ⭐️ DeliPress Builder Sidebar
+
+.delipress__builder__side
+    flex 0 0 350px
+    position relative
+
+    @media only screen and (max-width: 1200px)
+        flex 0 0 300px
+
+    // 🎨 Smaller CSS Components in builder
+
+    // Smaller tabs
+    .delipress__tabs
+        margin 0
+        padding 0
+        display flex
+        align-items center
+        border-bottom 1px solid neutral
+
+    .delipress__tabs__item
+        padding 7px 8px
+        font-size 11px
+        margin 0 0 0 2px
+        flex 1
+        max-width 50%
+        text-align center
+        border-width 1px
+        user-select none
+        display flex
+        justify-content center
+        align-items center
+
+        .dashicons
+            width 1em
+            height 1em
+            font-size 15px
+            margin-top 0px
+            margin-right 2px
+            transform translateY(-1px)
+
+    .delipress__tabs__item--close
+        flex none
+        height 34px
+        padding-left 14px
+        padding-right 14px
+
+    // Smaller inputs
+    .delipress__input
+        padding 6px
+        font-size 12px
+        height builder-input-height
+
+    .delipress__input__help
+        padding 6px 8px
+        font-size 12px
+        background-color #FFF8E6
+        border-left 4px solid #FDB729
+        margin 6px
+
+        p
+            margin 0
+
+    .delipress__specialinput__suffix
+    .delipress__numberinput__suffix
+        line-height builder-input-height
+
+    .delipress__numberinput__increment
+        width 17px
+        height 13px
+
+    // Smaller switches
+    .delipress__switch
+        width 54px
+        font-size 12px
+
+    .delipress__switch__on
+    .delipress__switch__off
+        padding 4px 0
+
+    .delipress__switch__slider
+        margin 2px
+        width calc(50% - 2px)
+        height calc(100% - 4px)
+
+    .delipress__switch__input:checked + label .delipress__switch__slider
+        left calc(50% - 2px)
+
+    // Smaller buttongroups
+    .delipress__buttonsgroup__cell label
+        line-height 30px
+
+        span
+            line-height 30px
+
+    // select
+    select
+        min-width 130px
+        border 2px solid neutral
+        box-shadow none
+        color text-color
+        height 30px
+        max-width: 182px
+
+
+    // Select
+    select
+        min-width 6.5em
+
+
+.delipress__builder__side__form
+    padding pad-xs
+
+
+    label
+        display block
+        margin-bottom pad-xs
+
+    select
+        width 100%
+
+    .delipress__button
+        margin-top pad-xs
+    .delipress__message
+        transition opacity 0.5s
+        opacity: 0
+
+    .delipress__message-success, .delipress__message-error
+        opacity: 1
+        padding 6px 8px
+        font-size 12px
+        background-color lighten(save-color, 70%)
+        border-left 4px solid lighten(save-color, 10%)
+        margin 6px 0
+        color rgba(0,0,0,.9)
+
+        p
+            margin 0
+
+    .delipress__message-error
+        background-color lighten(error-color, 70%)
+        border-left 4px solid lighten(error-color, 10%)
+
+.delipress__builder__side__form__item
+    display none
+
+    &.delipress__is-active
+        display block
+
+.delipress__builder__side__panel
+    position absolute
+    left 0
+    right 0
+    top 36px
+    bottom 0
+    overflow hidden
+
+// when bottom bar is here
+.delipress__builder__side__panel--with-bottom
+    bottom 50px
+
+.delipress__builder__side__panel__scroll
+    position absolute
+    left 0
+    right -(scrollbar-width)
+    top 0px
+    bottom 0
+    overflow-x: hidden
+    overflow-y scroll
+    padding-right scrollbar-width
+    -ms-overflow-style none
+    padding-bottom: 50px
+    transform translate3d(0, 0,0)
+
+    &::-webkit-scrollbar
+        display none
+
+.delipress__builder__side__panel__tabcontent
+    padding-bottom 60px
+    transform translateX(0)
+    opacity 1
+    transition transform .325s cubic-bezier(0.000, 1, 0.390, 1), opacity .325s linear
+
+    &.delipress--is-animating
+        transform translateX(-100%)
+        opacity 0
+
+.delipress__builder__side__title
+    margin 0 0 pad-content 0
+    padding 15px 10px 2px
+    border-bottom 1px solid neutral
+    color wp-text-color
+    text-transform uppercase
+    font-weight 500
+    display block
+    position relative
+
+    .delipress__builder__premium
+        position absolute
+        bottom 2px
+        right 10px
+        text-transform capitalize
+        color white
+        cursor pointer
+        background-color premium-color
+        border-radius radius
+        padding 3px 4px
+        font-size 11px
+        line-height 12px
+        font-weight 300
+
+        .dashicons
+            font-size 13px
+            height 12px
+            width 12px
+            margin-right 3px
+
+.delipress__builder__side__content
+    margin pad-content
+
+.delipress__builder__side__setting
+    margin 8px pad-content
+    display flex
+    align-items center
+
+    &.delipress__builder__side__setting--full
+        flex-direction column
+
+        .delipress__builder__side__setting__label
+            margin-bottom pad-xs
+
+        .delipress__builder__side__setting__input
+            width 100%
+
+
+.delipress__builder__side__setting--border
+    flex-direction column
+    justify-content center
+    align-items flex-start
+
+    .delipress__builder__side__setting__input
+        display flex
+        align-items center
+        padding 5px 0
+
+        .delipress__numberinput
+            width 70px
+
+        select
+            margin 0 10px
+
+
+.delipress__builder__side__setting__label
+    flex 3
+    font-size 12px
+    color text-color
+
+.delipress__builder__side__setting__input
+    flex 4
+
+    &.delipress__flex-center
+        display flex
+        align-items center
+        min-height 25px
+.delipress__builder__side__setting__input__preview__image
+    width 50px
+    height 50px
+    border-radius radius
+    margin -10px 0 0 -2px
+
+.delipress__builder__side__setting__input--align .delipress__radio:before
+    margin-left 5px
+
+.delipress__builder__side__setting__input--flex
+    display flex
+    flex-direction column
+    align-items flex-start
+    justify-content center
+
+    & > *
+        margin 5px 0
+
+.delipress__builder__side__setting__apply_all
+    margin-top pad-s
+    padding pad-xs
+    display flex
+    align-items center
+    justify-content space-between
+    background-color rgba(neutral, 50%)
+
+.delipress__builder__custom-css
+    textarea
+        width 100%
+        min-height: 220px
+        border 1px solid neutral
+        font-size 13px
+        padding .6em
+        font-family monospace
+
+.delipress__builder__side__setting--column
+    flex-direction column
+    align-items flex-start
+
+.delipress__builder__side__settings--third
+    display flex
+    align-items center
+    margin 10px
+
+.delipress__builder__side__settings--third__label
+    flex 1
+
+.delipress__builder__side__settings--third__field
+    flex 2
+
+.delipress__builder__side__components
+    display flex
+    flex-wrap wrap
+    margin 0 -1px
+    position relative
+
+.delipress__builder__premium-incentive
+    position absolute
+    z-index 10000
+    background-color #fff
+    width 90%
+    padding 10px
+    left 50%
+    top -5px
+    transform translateX(-50%)
+    box-shadow 0 0 6px rgba(0, 0, 0, .15)
+    border-radius radius
+    text-align center
+
+    .dashicons-no-alt
+        position absolute
+        right 5px
+        top 5px
+        cursor pointer
+
+        &:hover
+            color wp-text-color
+
+    p
+        margin 5px 0
+
+    .delipress__builder__premium-badge
+        color brand-2
+
+        .dashicons
+            font-size 16px
+
+.delipress__builder__side__draggable
+    width calc(33.333333% - 2px)
+    margin 1px
+
+
+    @media screen and (max-width: 1200px)
+        width calc(50% - 2px)
+
+.delipress__builder__side__component
+    padding pad-xs
+    background dark
+    color lighten(text-color, 15%)
+    text-align center
+    border-radius 2px
+    font-size .9em
+    transition base-transition
+
+    &:hover
+        color lighten(text-color, 60%)
+
+    .dashicons, .delipress-font
+        display block
+        margin 0 auto 5px
+        width 30px
+        height 30px
+        font-size 30px
+
+.delipress__builder__side__columns
+    display flex
+    flex-wrap wrap
+    margin 0 -1px
+
+.delipress__builder__side__column
+    width calc(25% - 2px)
+    margin 1px
+    padding pad-s 14px
+    background dark
+    text-align center
+    border-radius 2px
+
+    @media only screen and (max-width: 1200px)
+        width calc(50% - 2px)
+
+
+// Column schema
+.delipress__builder__side__column__schema
+    position relative
+    margin 0 auto
+    height 30px
+    border 1px solid text-color
+    border-radius radius
+
+.delipress__builder__side__column__schema--two:before
+.delipress__builder__side__column__schema--three:before
+.delipress__builder__side__column__schema--three:after
+.delipress__builder__side__column__schema--four:after
+.delipress__builder__side__column__schema--four:before
+        content ''
+        display block
+        position absolute
+        top 0
+        z-index 1
+        height 28px
+        width 1px
+        background text-color
+
+.delipress__builder__side__column__schema--two:before
+    left calc(50% - 1px)
+
+.delipress__builder__side__column__schema--three:before
+    left 33.33333%
+
+.delipress__builder__side__column__schema--three:after
+    left 66.66667%
+
+.delipress__builder__side__column__schema--four:before
+    left calc(25% - 1px)
+    width 50%
+    background transparent
+    border-right 1px solid text-color
+    border-left 1px solid text-color
+
+.delipress__builder__side__column__schema--four:after
+    left calc(50% - 1px)
+
+.delipress__builder__side__bottom
+    position absolute
+    bottom 0
+    left 0
+    right 0
+    padding 8px pad-content
+    border-top 2px solid neutral
+    z-index 500
+    background white
+    display flex
+
+.delipress__builder__side__bottom__left
+    flex 1
+    display flex
+    align-items center
+
+.delipress__builder__side__bottom__right
+    text-align right
+
+.delipress__builder__side__bottom__text
+    display inline-block
+    float left
+    font-size 11px
+    flex 1
+    margin-left 4px
+
+
+// ⭐️ DeliPress Builder Main Area
+
+.delipress__builder__main
+    flex 1 0 650px
+    position relative
+    min-width 650px
+    background neutral
+
+.delipress__builder__main__actions
+    display flex
+    align-items center
+    padding 0 pad-xs
+    background-color white
+    height 34px
+    position relative
+
+    a
+        display flex
+        align-items center
+        color text-color
+        padding 5px 6px
+        transition base-transition
+        will-change opacity
+        opacity .8
+
+        &:hover
+            opacity 1
+
+        .dashicons
+            margin-right 4px
+            font-size 16px
+            width 1em
+            height 1em
+
+.delipress__builder__main__actions__autosave
+    margin 0 auto
+    color save-color
+
+    .dashicons
+        width 16px
+        height 16px
+        font-size 16px
+        margin-top 1px
+
+.delipress__builder__main__preview
+    position absolute
+    top 34px
+    left 0
+    right 0
+    bottom 0
+    overflow hidden
+
+.delipress__builder__main__preview__loader
+    display flex
+    justify-content center
+    align-items center
+    background-color #F0F0F0
+    position absolute
+    left 0
+    top 0
+    bottom 0
+    right 0
+    z-index 10
+    visibility hidden
+    opacity 0
+    pointer-events none
+    transition visibility .4s ease-in, opacity .4s ease-in
+
+    &.is-visible
+        visibility visible
+        opacity 1
+        pointer-events all
+
+
+.delipress__builder__main__preview__scroll
+    position absolute
+    left 0
+    top 0
+    bottom 0
+    right -(scrollbar-width)
+    padding-right scrollbar-width
+    overflow-y scroll
+    -ms-overflow-style none
+    z-index 9
+    &::-webkit-scrollbar
+        display none
+
+
+// 💥 CSS RESET for preview area
+.delipress__builder__main__preview
+    @import 'partials/_reset-builder'
+
+.delipress__builder__main__preview
+    .delipress__builder__main__preview__component__mjml
+        outline 1px dashed transparent
+        transition .2s outline ease-out
+        &--email-online
+        &--unsubscribe
+            a
+                text-decoration underline
+        &--text
+            .mjtext
+                p
+                    font-size:inherit
+                    margin 0
+
+
+
+// New section block (when campaign is still empty)
+
+.delipress__builder__main__preview__newsection__wrap
+    background white
+    padding pad-s
+    text-align center
+    width 600px
+    margin 0 auto
+
+.delipress__builder__main__preview .delipress__builder__main__preview__newsection__title
+    margin-top pad-s
+    font-size 14px
+    text-transform uppercase
+
+.delipress__builder__main__preview__newsection__layouts
+    margin pad-s pad-m 0
+    display flex
+    flex-wrap wrap
+
+.delipress__builder__main__preview__newsection__layout
+    width 25%
+    padding pad-xs
+    cursor pointer
+
+.delipress__builder__main__preview__newsection__layout__schema
+    position relative
+    margin 0 auto
+    height 60px
+    background neutral
+    border-radius radius
+    transition background .2s ease-out
+
+    &:hover
+        background text-color
+
+.delipress__builder__main__preview__newsection__layout__schema--two:before
+.delipress__builder__main__preview__newsection__layout__schema--three:before
+.delipress__builder__main__preview__newsection__layout__schema--three:after
+.delipress__builder__main__preview__newsection__layout__schema--four:after
+.delipress__builder__main__preview__newsection__layout__schema--four:before
+    content ''
+    display block
+    position absolute
+    top 0
+    z-index 1
+    height 60px
+    width 2px
+    background white
+
+.delipress__builder__main__preview__newsection__layout__schema--two:before
+    left calc(50% - 1px)
+
+.delipress__builder__main__preview__newsection__layout__schema--three:before
+    left 33.33333%
+
+.delipress__builder__main__preview__newsection__layout__schema--three:after
+    left 66.66667%
+
+.delipress__builder__main__preview__newsection__layout__schema--four:before
+    left calc(25% - 1px)
+    width 50%
+    background transparent
+    border-right 2px solid white
+    border-left 2px solid white
+
+.delipress__builder__main__preview__newsection__layout__schema--four:after
+    left calc(50% - 1px)
+
+
+// 📦 New Columns awaiting components
+
+.delipress__builder__main__preview__addcomponent
+    margin pad-xs
+    padding pad-s
+    text-align center
+    color text-color
+    border 2px dashed neutral
+    transition .2s border-color ease-out
+    cursor pointer
+
+    .dashicons
+        font-size 22px
+        width 22px
+        height 22px
+
+    &:hover
+        border-color text-color
+
+.delipress__builder__main__preview__addcomponent__text
+    vertical-align middle
+
+// 📦 New Image to Insert
+
+.delipress__builder__main__preview__addimage
+    background-color neutral
+    padding pad-s
+    text-align center
+    color text-color
+    border 2px dashed neutral
+    transition .2s border-color ease-out
+    cursor pointer
+
+    .dashicons
+        font-size 22px
+        width 22px
+        height 22px
+
+
+// 📦  Campaign Builder Section floating actions (duplicate, delete)
+
+.delipress__builder__main__preview__actions
+    position absolute
+    top 0px
+    left auto
+    right 0px
+    transition .2s opacity ease-out
+
+.delipress__builder__main__preview__actions__title
+    font-size 11px
+    display block
+    flex 0 0 100%
+
+.delipress__builder__main__preview__actions__wrap
+    display flex
+    flex-wrap wrap
+    position sticky
+    top 20px
+
+// Position for Section buttons
+.delipress__builder__main__preview__section
+
+    & > .delipress__builder__main__preview__actions
+        opacity 0
+        right 10px
+        bottom 0
+        z-index 100
+        width 90px
+
+        @media screen and (max-width: 1380px)
+            right 0px
+            padding-right 5px
+            left auto
+            width 50px
+
+            @media screen and (max-width: 1070px), (min-width: 1200px) and (max-width: 1240px)
+                width 23px
+                padding-right 2px
+
+        .delipress__builder__main__preview__actions__wrap
+            justify-content flex-end
+
+            @media screen and (max-width: 1380px)
+                flex-direction column
+                align-items flex-end
+                justify-content center
+            @media screen and (max-width: 1070px), (min-width: 1200px) and (max-width: 1240px)
+                background dark
+                border-radius 4px 0 0 4px
+
+        .delipress__builder__main__preview__actions__button
+            background dark
+
+            @media screen and (max-width: 1380px)
+                margin 0
+
+                & + .delipress__builder__main__preview__actions__button
+                    margin 1px 0
+
+        .delipress__builder__main__preview__actions__title
+            color dark
+            right 0
+            text-align right
+            @media screen and (max-width: 1070px), (min-width: 1200px) and (max-width: 1240px)
+                display none
+    // &.delipress--is-active > .delipress__builder__main__preview__actions
+    //     .delipress__builder__main__preview__actions__button
+    //         background-color link-color
+    //
+    //     .delipress__builder__main__preview__actions__title
+    //         color link-color
+    //
+    //     .delipress__builder__main__preview__actions__wrap
+    //         @media screen and (max-width: 1070px), (min-width: 1200px) and (max-width: 1240px)
+    //             background-color link-color
+// Position for Component buttons
+.delipress__builder__main__preview__component
+    position relative
+
+    & > .delipress__builder__main__preview__actions
+        display none
+        top 0px
+        padding 4px 0 4px 6px
+        background-color transparent
+        color neutral
+        border-radius radius 0 0 0
+        z-index 90
+        transition all .2s
+
+        .delipress__builder__main__preview__actions__wrap
+            align-items center
+
+        // .delipress__builder__main__preview__actions__title
+        //     display inline-block
+        //     flex none
+        //     margin-right 6px
+
+        .delipress__builder__main__preview__actions__button
+            background transparent
+            .dashicons
+                color darken(neutral, 20%)
+                transition all .2s
+
+    &.delipress--is-active > .delipress__builder__main__preview__actions
+        background-color brand-3
+        color white
+        position absolute
+
+        .delipress__builder__main__preview__actions__button
+            background transparent
+            .dashicons
+                color white
+
+
+.delipress__builder__main__preview__actions__button
+    display inline-block
+    color white
+    padding 2px 3px
+    margin-right 2px
+    border-radius 2px
+    cursor pointer
+    transition base-transition
+
+    .dashicons
+        font-size 14px
+        width 14px
+        height 14px
+        line-height inherit
+
+    &:hover
+        color white
+        transform translateY(-1px)
+
+    &:last-child
+        margin-right 0
+
+
+// 📦 Campaign Builder Section
+
+.delipress__builder__main__preview__section
+    position relative
+
+    &:before
+        border-left 4px solid transparent
+        border-right 4px solid transparent
+
+// Style of hover when section is selected or hover
+.delipress__builder__main__preview__section:before
+.delipress__builder__main__preview__section.delipress--is-active:before
+    content ''
+    display block
+    position absolute
+    top 0
+    left 0
+    right 0
+    bottom 0
+    opacity 0
+    transition .3s all cubic-bezier(0.850, 0.175, 0.000, 1.385)
+
+
+// Hover : black lines
+.delipress__builder__main__preview__section:hover
+    & > .delipress__builder__main__preview__actions
+        opacity 1
+
+    &:before
+        opacity 1
+        border-left-color dark
+        border-right-color dark
+
+// Active : red lines
+.delipress__builder__main__preview__section.delipress--is-active:before
+    opacity 1
+    // border-left-color link-color
+    // border-right-color link-color
+
+// Row in Section
+.delipress__builder__main__preview__section__row
+    margin 0 auto
+
+
+// 📦 Campaign Builder Component
+
+.delipress__builder__main__preview__component:before
+    content ''
+    display block
+    position absolute
+    z-index 10001
+    top 0
+    left 0
+    right 0
+    bottom 0
+    opacity 0
+    border 2px dashed neutral
+    transition .2s opacity linear
+    pointer-events none // Allow click trough this element
+
+.delipress__builder__main__preview__component.delipress--is-active:before
+    border 2px solid brand-3
+    opacity 1
+
+.delipress__builder__main__preview__component:hover
+    // .delipress__builder__main__preview__component__mjml
+    //     outline 1px dashed tomato
+
+    .delipress__builder__main__preview__actions
+        display block // not opacity to avoid trigger component hover when hovering action area
+
+    &:before
+        opacity 1
+
+
+// 📦 Dropzone : Line before and after section / component
+
+.delipress__builder__main__preview__section__dropzone
+.delipress__builder__main__preview__component__dropzone
+    position absolute
+    left 0
+    right 0
+    height 10px
+    opacity 0
+
+.delipress__builder__main__preview__section__dropzone
+    background-color black
+
+.delipress__builder__main__preview__component__dropzone
+    background-color brand-3
+
+
+//  Fullscreen mode
+
+.delipress-is-builder .delipress--fullscreen
+    z-index 50000
+
+    .delipress__builder
+        position fixed
+        left 0
+        right 0
+        bottom 0
+        top 115px
+        z-index 50000
+
+    .delipress__header
+        position fixed
+        top 0
+        left 0
+        right 0
+
+
+// 🎨 TinyMCE Customization
+
+// Position
+.mce-tinymce.mce-tinymce-inline
+    transform translate(-1px, -4px)
+
+// Remove outline
+.mce-content-body.mce-edit-focus
+    outline 0
+
+
+// ======================
+// Optins form builder ==
+// ======================
+
+.delipress__optins__state
+    max-width 400px
+    width calc(100% - 20px)
+    margin 0 auto 1rem
+    display flex
+    justify-content center
+    align-items center
+
+    .delipress__buttonsgroup
+        flex 1
+        margin-left 1rem
+
+
+    .delipress__buttonsgroup__cell
+        line-height 30px
+
+        label
+            background #FFF
+            border-right 2px solid #F2F2F2

@@ -1,0 +1,20 @@
+.delipress__opener
+    cursor pointer
+
+    .dashicons
+        transition base-transition
+
+.delipress__opener + .delipress__section
+.delipress__opener + .delipress__collection
+        display none
+
+.delipress__opener--is-open
+    .dashicons
+        transform rotateZ(-180deg)
+
+.delipress__opener--is-open + .delipress__section
+    display block
+    padding 0
+
+.delipress__opener--is-open + .delipress__collection
+    display flex

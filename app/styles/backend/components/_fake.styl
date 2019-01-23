@@ -1,0 +1,77 @@
+
+.delipress__fake__site
+    background-color #FFF
+    margin 0px auto
+    max-width 800px
+    width calc(100% - 40px)
+
+    &.delipress__fake__site--flyin
+        width auto
+        max-width 100%
+        margin 0
+        position absolute
+        background-color transparent
+        top: 40px
+        bottom 0
+        left 0
+        right 30px
+        overflow hidden
+        min-height: 550px
+
+.delipress__fake__container
+    padding 20px
+
+.delipress__fake__post
+    padding 20px
+    border-top 1px solid rgba(0, 0, 0, .1)
+    border-bottom 1px solid rgba(0, 0, 0, .1)
+    position relative
+
+.delipress__fake__title
+    height 20px
+    background-color #e1e1e1
+    width 60%
+    margin-bottom 20px
+    border-radius 10px
+
+.delipress__fake__image
+    padding 100px 20px
+    background neutral
+    color text-color
+    margin 20px 0
+    text-align center
+
+    span
+        font-size 22px
+        width 22px
+        height 22px
+
+.delipress__fake__text
+    height 12px
+    background-color #f0f0f0
+    display block
+    border-radius 7px
+
+    & + .delipress__fake__text, .delipress__fake__popup + &
+        margin-top 16px
+
+
+.delipress__fake__popup
+    position absolute
+    top 50%
+    left 50%
+    width 100%
+    max-width 90%
+    transform: translate3d(-50%, -50%, 0)
+
+    #DELI-Optin .DELI-wrapper
+        margin 0 auto
+
+
+.delipress__fake__overlay
+    position absolute
+    left 0
+    right 0
+    top 0
+    bottom 0
+    background-color rgba(0, 0, 0, .8)

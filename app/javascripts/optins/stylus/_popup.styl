@@ -1,0 +1,34 @@
+#DELI-Optin.DELI-Popup
+    @supports (display: flex)
+        position fixed
+        top 0
+        bottom 0
+        left 0
+        right 0
+        display flex
+        justify-content center
+        align-items center
+        z-index 100000
+
+    .DELI-wrapper
+        font-size $content-size
+        position relative
+        z-index 100000
+        margin 0
+        width calc(100% - 40px)
+        max-width 600px
+        @supports not (display: flex)
+            position fixed
+            top 50%
+            left 50%
+            margin -200px 0 0 -300px
+
+
+    .DELI-Overlay
+        position fixed
+        top 0
+        left 0
+        right 0
+        bottom 0
+        z-index 99999
+        background rgba(0, 0, 0, .8)

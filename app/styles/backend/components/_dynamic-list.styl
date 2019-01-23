@@ -1,0 +1,78 @@
+.delipress__dynamic-list__count
+    margin-right 20px
+
+    .delipress__dynamic-list__count__number
+        font-size 1.4em
+        font-weight bold
+        color brand-3
+
+.delipress__list-dynamic-table
+    padding .4em .6em
+    background light-neutral
+    border 1px solid neutral
+    border-radius: radius
+    margin 10px 0
+
+    select
+        height: 42px
+
+.delipress__list-dynamic__and-actions
+    position relative
+
+    .js-delipress-remove-and
+        border none
+        background-color brand-1
+        color #ffffff
+        display inline-block
+        width 28px
+        height 28px
+        position relative
+        border-radius: 50%
+        cursor pointer
+        position: absolute
+        right -38px
+        top 50%
+        transform translateY(-50%)
+        opacity 0
+        transition opacity .175s linear
+        outline none
+        &:before
+            content ''
+            position absolute
+            height: 28px
+            width 14px
+            left -10px
+            top 0
+
+        &:active
+            outline none
+
+        .dashicons
+            position absolute
+            left 50%
+            top 50%
+            transform translate3d(-50%, -50%, 0)
+
+
+.delipress__list-dynamic-table:first-child tr:first-of-type .js-delipress-remove-and
+    display none
+
+.delipress__list-dynamic-table tr:hover .js-delipress-remove-and
+    opacity  1
+
+.delipress__dynamic-list__save
+    display flex
+    align-items center
+
+    p
+        margin-left: 20px
+        max-width 500px
+        display flex
+        align-items center
+        background-color light-neutral
+        border 1px solid neutral
+        padding 6px 10px
+        border-radius radius
+
+        .dashicons 
+            margin-right .4em

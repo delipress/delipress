@@ -1,0 +1,68 @@
+.delipress__csvimport
+    background white
+    max-width 800px
+    margin pad-m auto
+
+    header
+    section
+        display flex
+
+.delipress__csvimport__title
+    flex 1
+    text-align center
+    background neutral
+    font-size 1.2em
+    padding pad-s 0
+    font-weight 600
+    margin 2px
+    border-radius radius
+
+.delipress__csvimport__col
+    flex 1
+
+.delipress__csvimport__list
+    margin pad-m
+    position relative
+
+    li
+        padding pad-xs
+        border 1px solid neutral
+        border-top none
+        margin 0
+        border-top-left-radius radius
+        border-top-right-radius radius
+
+    li:first-child
+        padding 12px pad-xs
+        background brand-2
+        color white
+        border none
+        text-transform uppercase
+        font-weight 600
+        font-size .9em
+
+    li:last-child
+        position relative
+
+        span
+            position absolute
+            top 4px
+            left pad-xs
+            font-size 1.8em
+            color darken(neutral, 20%)
+            display block
+
+    &:after
+        content '• • •'
+        position absolute
+        top 10px
+        left 100%
+        color brand-2
+        width 60px
+        text-align center
+
+.delipress__csvimport__assign
+    margin pad-m
+
+    p
+        text-align center

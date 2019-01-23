@@ -1,0 +1,105 @@
+// 📦 Preview
+
+.delipress__mjml
+    display none
+    &.is-visible
+        display block
+
+.delipress__mjml__close
+    position absolute
+    right 10px
+    top: 10px
+    cursor pointer
+
+.delipress__mjml__preview
+    position fixed
+    z-index 10000
+    top 52px
+    left 20px
+    right 20px
+    bottom 20px
+    background-color #fff
+    box-shadow 0 4px 20px rgba(0, 0, 0, .2)
+    border-radius radius
+    overflow-y scroll
+    padding 30px
+
+.delipress__mjml__overlay
+    position fixed
+    z-index 9999
+    top 0
+    left 0
+    right 0
+    bottom 0
+    background-color rgba(0, 0, 0, .8)
+
+// Preview menu
+
+body.mjml-preview-on
+    #adminmenumain
+        z-index 1
+
+.delipress__preview__devices
+    margin 0 auto
+    width 500px
+    display flex
+    align-items center
+
+    a
+        flex auto
+        text-align center
+        line-height 55px
+        color text-color
+
+        &:hover
+            color wp-text-color
+
+    img
+        vertical-align middle
+        transform translateY(-2px)
+        margin-right 8px
+
+.delipress__preview__devices__smartphone img
+    height 30px
+
+.delipress__preview__devices__tablet img
+    height 40px
+
+.delipress__preview__devices__desktop img
+    height 45px
+
+// Preview content
+.delipress__preview__device
+    margin pad-m auto
+    position relative
+    background-size 100%
+
+.delipress__preview__device--smartphone
+    background-image url('../images/devices/smartphone.svg')
+    width 400px
+    height 830px
+
+    iframe
+        margin 102px 0 0 24px
+        width 352px
+        height 628px
+
+.delipress__preview__device--tablet
+    background-image url('../images/devices/tablet.svg')
+    width 800px
+    height 1130px
+
+    iframe
+        margin 104px 0 0 54px
+        width 692px
+        height 923px
+
+.delipress__preview__device--desktop
+    background-image url('../images/devices/desktop.svg')
+    width 1100px
+    height 634px
+
+    iframe
+        margin 52px 0 0 142px
+        width 817px
+        height 510px

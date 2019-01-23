@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>button</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Button" transform="translate(-20.000000, -20.000000)">
+            <rect id="Rectangle" fill="#32373C" x="20" y="20" width="199.997406" height="200" rx="2"></rect>
+            <g id="button" transform="translate(80.000000, 98.000000)" fill-rule="nonzero" fill="#8BA0AA">
+                <path d="M71.1111111,0 L8.88888889,0 C4,0 0,4 0,8.88888889 L0,35.5555556 C0,40.4444444 4,44.4444444 8.88888889,44.4444444 L71.1111111,44.4444444 C76,44.4444444 80,40.4444444 80,35.5555556 L80,8.88888889 C80,4 76,0 71.1111111,0 Z M75.5555556,31.1111111 C75.5555556,33.7777778 73.7777778,35.5555556 71.1111111,35.5555556 L8.88888889,35.5555556 C6.22222222,35.5555556 4.44444444,33.7777778 4.44444444,31.1111111 L4.44444444,8.88888889 C4.44444444,6.22222222 6.22222222,4.44444444 8.88888889,4.44444444 L71.1111111,4.44444444 C73.7777778,4.44444444 75.5555556,6.22222222 75.5555556,8.88888889 L75.5555556,31.1111111 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

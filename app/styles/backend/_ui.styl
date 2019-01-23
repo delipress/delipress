@@ -1,0 +1,206 @@
+.delipress
+    padding 0
+    margin 20px 20px 20px 0
+    color text-color
+    transition .2s padding-top linear
+    box-shadow 0 2px 3px rgba(0, 0, 0, .1);
+
+// Fixed Menu
+
+.delipress--fixmenu
+
+    .delipress__header__topbar
+        margin-bottom 75px
+
+    .delipress__header__actions
+        position fixed
+        top 32px
+        left 160px
+        right 0
+        z-index 500
+        padding pad-xs pad-s
+        box-shadow base-shadow
+
+    .delipress__header__actions__logo
+        display block
+        height 34px
+        margin-right pad-s
+
+
+// Header
+
+.delipress__header__topbar
+    display flex
+    align-items center
+    background #32373C
+    color white
+    padding pad-content
+    border-top-left-radius radius
+    border-top-right-radius radius
+    font-size .9em
+
+.delipress__header__topbar__logo
+    height 20px
+    display inline-block
+
+.delipress__header__topbar__hint
+    flex 1
+    display inline-block
+    padding 0 pad-s
+
+.delipress__header__actions
+    display flex
+    padding pad-content
+    background white
+    transition padding .3s ease-out
+
+.delipress__header__actions__logo
+    display none
+
+.delipress__header__actions__left
+    flex 1
+
+.delipress__header__actions__center
+    flex 2
+    text-align center
+
+.delipress__header__actions__right
+    flex 1
+    text-align right
+
+.delipress__header__actions > form
+    display flex
+    width 100%
+
+
+// Content
+.delipress__content
+    padding pad-content
+    background white
+    border-bottom-left-radius radius
+    border-bottom-right-radius radius
+
+    > h1:first-child
+    > h2:first-child
+        margin-top pad-m
+
+.delipress__content__bottom
+    margin-top pad-xl
+    text-align center
+
+
+// Footer
+.delipress__footer
+    margin-top pad-s
+    text-align right
+
+.delipress__footer__block
+    margin pad-xs
+    float right
+    clear both
+    font-size .9em
+    border-radius radius
+
+    .dashicons
+        width 14px
+        height 14px
+        font-size 14px
+
+
+// Hide WP Messages
+#message
+.update-nag
+.updated
+    display none !important
+
+
+.delipress-is-builder
+    [class^="react-toolbar-tinymce-"]
+        position sticky
+        z-index 1000
+        top 40px
+
+        .react-toolbar-holder
+            position absolute
+            top -44px
+
+        .mce-tinymce
+            border 1px solid darken(neutral, 5%)
+            border-radius radius
+            overflow hidden
+
+    .mce-tinymce
+        border none
+
+    .mce-panel
+        background-color #fff
+
+    .mce-btn
+        background transparent
+        border-radius 2px
+        color text-color
+
+        &:hover, &:focus
+            background-color darken(neutral, 2%)
+            border-color transparent
+            color text-color
+
+        &.mce-active
+            border 1px solid neutral
+            background-color neutral
+            color text-color
+
+    .mce-btn button
+        padding 2px 5px
+        font-size 13px
+        color text-color
+
+        .mce-ico
+            color text-color
+            text-shadow 0px 0px 0px rgba(255,255,255, 0)
+
+.delipress__responsive-warning
+    position fixed
+    top 50%
+    left 50%
+    z-index 10000
+    margin -90px 0 0 -200px
+    background #FFF
+    padding 10px
+    width 400px
+    height 180px
+    display none
+    flex-direction column
+    justify-content space-around
+    align-items center
+    padding 30px
+    font-size 14px
+    border-radius 4px
+    box-shadow 0 4px 20px rgba(0,0,0,.2)
+    color #333
+    font-weight bold
+
+    @media screen and (max-width: 1030px)
+        display flex
+
+
+// Utilities
+.delipress
+    .delipress__no-flex
+        display block
+
+    .delipress__flex-column
+        display flex
+        flex-direction column
+
+    .delipress__aifs
+        align-items flex-start
+
+    .delipress__relative
+        position relative
+
+    .delipress__align-right
+        text-align right
+
+    .delipress__align-left
+        text-align left

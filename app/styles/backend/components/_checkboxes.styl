@@ -1,0 +1,54 @@
+.delipress__checkbox
+    height 22px
+    min-width 30px
+    display flex
+    align-items center
+    user-select none
+    position relative
+    font-size 14px
+
+    .delipress__list &:before, .delipress__list &:after
+        font-size 20px
+
+    .delipress__checkbox__wrap &:before, .delipress__checkbox__wrap &:after
+        font-size 18px
+
+    &:before, &:after
+        font-size 16px
+
+    &:before
+        content ''
+        display inline-block
+        vertical-align middle
+        width 1em
+        height 1em
+        margin-right 8px
+        border-radius 4px
+        border 2px solid text-color
+        transition .1s all ease-out
+        cursor pointer
+        box-sizing border-box
+
+        &:hover
+            border-color #5AA6C9
+
+
+.delipress__checkbox__input:checked + label:before
+    background link-color
+    border-color link-color
+
+.delipress__checkbox__input:checked + label:after
+    font-family 'delipress'
+    content "\2713"
+    position absolute
+    left 0
+    top 0
+    width 1em
+    height 1em
+    -webkit-font-smoothing antialiased
+    color #FFF
+    text-align center
+    transform translate3d(0px, 2px, 0)
+
+input.delipress__checkbox__input
+    display none

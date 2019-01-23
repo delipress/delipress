@@ -1,0 +1,187 @@
+*, *:before, *:after
+    box-sizing border-box
+
+
+$formEl
+    font-size 16px
+    padding .6em 1em
+    border none
+    border-radius 0px
+    margin 10px
+    outline none
+    -webkit-appearance none
+    font-family inherit
+    line-height 1.3
+    min-height 40px
+    vertical-align middle
+
+
+#DELI-Optin
+    &.DELI-Popup-Builder
+        .DELI-wrapper:not(.DELI-naked)
+            margin 20px auto
+
+    .DELI-wrapper:not(.DELI-naked)
+        font-size 10px
+        width 100%
+        padding 15px 0 0
+        display flex
+        flex-direction column
+        justify-content center
+        align-items center
+        text-align center
+        background #FDF0D5
+        -webkit-font-smoothing antialiased
+        margin 20px 0
+        border-radius 40px
+
+        .DELI-wrapper-image
+            min-height: 1px
+
+        .DELI-textBloc
+            text-align center
+            margin 10px 0 0
+            width 100%
+
+        .DELI-title
+            font-size 24px
+            line-height 1.4
+            color currentColor
+            font-weight 600
+            margin-bottom 10px
+            padding 0 15px
+            min-width 60px
+
+        .DELI-message
+            font-size 18px
+            font-weight 300
+            margin-bottom 15px
+            line-height 1.55
+            padding 0 15px
+            min-width 60px
+
+        .DELI-success
+            font-size 20px
+            font-weight 600
+            margin-bottom 20px
+            line-height 1.55
+            padding 0 .5em
+
+        .DELI-redirect
+            padding 10px 10px 15px
+
+        .DELI-image
+            height auto
+            width 30%
+            margin 10px auto
+            display block
+
+        .DELI-formBloc
+            display flex
+            flex-direction column
+            align-items center
+            width 100%
+            justify-content center
+            padding 15px 10px
+            flex none
+
+            &.DELI-formBloc--inline
+                flex-direction row
+                flex-wrap wrap
+
+                .DELI-inputField[type="email"], .DELI-inputField[type="text"]
+                    width auto
+
+                .DELI-button
+                    width auto
+
+            &.DELI-formBloc--large
+                .DELI-inputField[type="email"], .DELI-inputField[type="text"]
+                    width 70%
+
+                .DELI-button
+                    width 70%
+
+            &.DELI-formBloc--full
+                .DELI-inputField[type="email"], .DELI-inputField[type="text"]
+                    width 100%
+
+                .DELI-button
+                    width 100%
+
+        .DELI-inputField[type="email"], .DELI-inputField[type="text"]
+            @extends $formEl
+            box-sizing border-box
+            background-color #FFF
+            flex none
+            max-width 100%
+
+            &:hover
+                box-shadow 0px 0px 2px rgba(0,0,0,0.1)
+
+            &:focus
+                box-shadow  1px 1px 2px rgba(0,0,0,0.1)
+
+            &::placeholder
+                color currentColor
+                opacity .4
+
+            &:invalid
+                box-shadow: none
+
+        .DELI-button
+            @extends $formEl
+            background-color #000
+            color #FFF
+            font-weight 600
+            cursor pointer
+            opacity 1
+            position relative
+            overflow hidden
+            display inline-block
+
+            &:before
+                content ''
+                position absolute
+                left 0
+                right 0
+                top 0
+                bottom 0
+                background-color rgba(255, 255, 255, .15);
+                pointer-events none
+                opacity 0
+                transform-origin center 20%
+                transform scale3d(0,0,0)
+                will-transform transform, opacity
+                transition opacity .1s linear, transform .1s ease-out
+                border-radius 10%
+
+            &:hover
+                opacity .95
+
+            &:active
+                &:before
+                    opacity 1
+                    transform scale3d(1.5, 1.5, 1.5)
+
+            &:disabled
+                opacity .6
+                cursor not-allowed
+
+#DELI-Optin
+    .DELI-close
+        position absolute
+        right 6px
+        top 6px
+        width 1em
+        height 1em
+        font-size 18px
+        cursor pointer
+
+        svg
+            width .7em
+            height auto
+
+    .DELI-Flyin--right
+        .DELI-close
+            right auto

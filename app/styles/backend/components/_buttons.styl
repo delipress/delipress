@@ -1,0 +1,171 @@
+.delipress__button
+    display inline-block
+    padding 8px pad-xs
+    border-radius 4px
+    transition .2s background linear, .2s color linear, .2s border linear, .2s text-shadow linear
+    outline none
+    -webkit-font-smoothing antialiased
+    text-rendering optimizeLegibility
+    font-weight 700
+    cursor pointer
+    text-align center
+    text-decoration none
+    box-shadow none
+    white-space nowrap
+
+    &:focus, &:hover
+        text-decoration none
+        box-shadow none
+        color currentColor
+
+// in case of more than one button in same line
+.delipress__button + .delipress__button
+    margin-left pad-xs
+
+.delipress__button
+    .dashicons
+        width 13px
+        height 13px
+        line-height 13px
+        font-size 13px
+        text-align center
+        vertical-align middle
+        transform translateY(-1px)
+
+    .dashicons--medium
+        font-size 16px
+
+.delipress__button--main
+    background brand-2
+    border 1px solid brand-2
+    color white
+
+    &:active
+    &:focus
+    &:hover
+        border-color darken(brand-2, 40%)
+        text-shadow 0 1px 1px darken(brand-2, 30%)
+        color white
+
+    &:active
+       background darken(brand-2, 10%)
+
+.delipress__button--second
+    background link-color
+    border 1px solid link-color
+    color white
+
+    &:active
+    &:hover
+    &:focus
+        border-color darken(link-color, 40%)
+        text-shadow 0 1px 1px darken(link-color, 30%)
+        color white
+
+    &:active
+        background darken(link-color, 10%)
+
+.delipress__button--save
+    background save-color
+    border 1px solid save-color
+    color white
+
+    &:active
+    &:hover
+    &:focus
+        border-color darken(save-color, 40%)
+        text-shadow 0 1px 1px darken(save-color, 30%)
+        color white
+
+    &:active
+        background darken(save-color, 10%)
+
+.delipress__button--soft
+    background neutral
+    border 1px solid neutral
+    color text-color
+
+    &.delipress__button--shadow
+        border 1px solid darken(neutral, 10%)
+
+    .dashicons + span
+        margin-left .3rem
+
+    &:active
+    &:hover
+    &:focus
+        border-color darken(neutral, 15%)
+        color text-color
+
+
+.delipress__button--small
+    font-size .9em
+    padding 0 8px
+    line-height builder-input-height - 2px // need to take the border into account with border-box
+    height builder-input-height
+
+    .dashicons
+        transform translateY(-1px)
+
+.delipress__button--link
+    padding 4px 0
+    border-bottom 1px solid #0073aa
+    box-shadow none
+    border-radius 0
+
+    &:hover, &:focus
+        border-bottom 1px solid #0073aa
+        box-shadow none
+
+    .dashicons
+        font-size 14px
+
+.delipress__button--fixwidth
+    width 20px
+    text-align center
+
+.delipress__button--big
+    font-size 1.2em
+    padding 1em pad-s
+    letter-spacing .5px
+    text-transform uppercase
+
+.delipress__button--large
+    .dashicons
+        width 16px
+        height 16px
+        font-size 16px
+
+.delipress__button--premium
+    background premium-color
+    color white
+    border 1px solid premium-color
+
+    &:active
+    &:hover
+    &:focus
+        border-color darken(premium-color, 40%)
+        text-shadow 0 1px 1px darken(premium-color, 30%)
+        color white
+
+.delipress__button[data-confirm]
+    cursor auto
+    span
+        display inline-block
+        margin 0 .3rem
+        cursor pointer
+        transition .1s all linear
+
+        &:hover
+            transform translateY(-1px)
+
+        &[data-action='true']
+            font-size 14px
+            color brand-1
+
+        &[data-action='false']
+            font-size 14px
+
+.delipress__button--demo-disabled
+    opacity: .4
+    cursor default

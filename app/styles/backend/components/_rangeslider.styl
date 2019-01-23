@@ -1,0 +1,126 @@
+range-color = #CCC
+
+.delipress
+    .input-range
+        margin-top 7px
+
+    .input-range__slider
+        appearance none
+        background #FFF
+        //border 1px solid range-color
+        border-radius 100%
+        cursor pointer
+        display block
+        height 1rem
+        margin-left -0.5rem
+        margin-top -0.65rem
+        outline none
+        position absolute
+        top 50%
+        width 1rem
+        right 0px
+        left 0px
+        box-shadow 1px 2px 5px rgba(0, 0, 0, .3), -1px 0px 1px rgba(0, 0, 0, .2)
+        transition transform .12s ease-out
+
+        &:active
+            transform scale(1.15)
+        &:focus
+            box-shadow 1px 4px 5px rgba(0, 0, 0, .3), -1px 0px 1px rgba(0, 0, 0, .2)
+
+    .input-range--disabled .input-range__slider
+        background #cccccc
+        border 1px solid #cccccc
+        box-shadow none
+        transform none
+
+    .input-range__label
+        color #aaaaaa
+        font-size 0.8rem
+        transform translateZ(0)
+        white-space nowrap
+
+    .input-range__label--min,
+    .input-range__label--max
+      bottom -1.4rem
+      position absolute
+      display none
+
+    .input-range__label--min
+        left 0
+
+    .input-range__label--max
+        right 10px
+        .input-range__label-container
+            left 50%
+
+    .input-range__label--value
+        position absolute
+        top -1.8rem
+        right 0
+
+    .input-range__label-container
+        //left -50%
+        right -10%
+        width 24px
+        display inline-block
+        text-align center
+        position relative
+        user-select: none
+        display none
+
+    .input-range__track
+      background #eeeeee
+      border-radius 0.3rem
+      cursor pointer
+      display block
+      height 0.3rem
+      position relative
+
+    .input-range--disabled .input-range__track
+        background #eeeeee
+
+    .input-range__track--background
+        left 0
+        margin-top -0.15rem
+        position absolute
+        right 0px
+        top 50%
+
+    .input-range__track--active
+        background link-color
+
+    .input-range
+        height 1rem
+        position relative
+        width 100%
+
+.delipress__builder__side__setting__input--range
+    position relative
+    display flex
+    padding-right 24px
+    padding-left 24px
+    &:before
+        content 'px'
+        position absolute
+        right 0px
+        top 0px
+        line-height builder-input-height
+        height builder-input-height
+        background-color neutral
+        border-top-right-radius 4px
+        border-bottom-right-radius 4px
+        padding 0 6px
+    &.delipress__builder__side__setting__input--range--px
+        &:before
+            content 'px'
+    &.delipress__builder__side__setting__input--range--pourcent
+        &:before
+            content '%'
+            padding 0 9px
+
+    input[type="text"]
+        text-align right
+        margin-left .8rem
+        width 40px
+        outline none

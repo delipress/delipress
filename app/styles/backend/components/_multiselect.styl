@@ -1,0 +1,102 @@
+.delipress__multiselect
+    padding 6px 10px 10px 10px
+    position relative
+    height auto
+    min-height 42px
+
+    template
+    select
+        display none
+
+.delipress__multiselect__item
+    display inline-block
+    background neutral
+    color text-color
+    padding 0 4px
+    margin 4px 4px 0 0
+    border-radius 20px
+    font-size 12px
+    border 2px solid neutral
+
+.delipress__multiselect__item__delete
+    .dashicons
+        display inline-block
+        width 14px
+        height 14px
+        font-size 14px
+        color wp-text-color
+        transform translateY(2px)
+
+.delipress__multiselect__colordot
+    display inline-block
+    width 9px
+    height 9px
+    border-radius 50%
+    background link-color
+
+.delipress__multiselect__add
+    display inline-block
+    color text-color
+    padding 1px 15px
+    margin 4px 4px 0 0
+    border-radius 20px
+    font-size 12px
+    border 1px dashed text-color
+    cursor pointer
+    outline none
+    user-select: none
+
+    &:focus
+        border-style solid
+
+.delipress__multiselect__add:hover
+    border-style solid
+
+.delipress__multiselect__list
+    position absolute
+    z-index 1
+    top calc(100% - 2px)
+    left -2px
+    right -2px
+    margin 0
+    padding 0
+    background white
+    border 2px solid link-color
+    border-top none
+    border-bottom-left-radius 4px
+    border-bottom-right-radius 4px
+    box-shadow base-shadow
+    transform-origin top
+    transform scaleY(0)
+    transition base-transition
+
+.delipress__multiselect__list__item
+    margin 0
+    padding 10px 16px
+    color wp-text-color
+    transition .2s padding ease-out
+    cursor pointer
+
+    &:hover
+        background link-color
+        color white
+        padding-left 21px
+
+        .delipress__multiselect__list__subscribers
+            color #eee
+
+.delipress__multiselect__list__subscribers
+    color text-color
+    font-size .9em
+
+.delipress__multiselect__list__placeholder
+    display none
+    margin 0
+    padding 10px 16px
+    color wp-text-color
+
+.delipress__multiselect--is-open
+    border-color link-color
+
+    .delipress__multiselect__list
+        transform scaleY(1)
