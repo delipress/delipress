@@ -1,0 +1,13 @@
+<wpml-config>
+    <admin-texts>
+        <key name="_delipress_options">
+            <key name="subscribers">
+                <key name="text_subscription" />
+                <key name="logo_subscription" />
+                <key name="title_subscription" />
+                <key name="button_subscription" />
+                <key name="subscription_redirect" />
+            </key>
+        </key>
+    </admin-texts>
+</wpml-config>
