@@ -1,20 +1,20 @@
-=== DeliPress - Newsletters and Opt-In forms ===
-Contributors: DeliPress
-Tags: newsletter, mailchimp, opt-in forms, mailjet, popup
-Requires at least: 4.5
-Tested up to: 4.9.2
-Requires PHP: 5.6
-Stable tag: 1.3.9
-Donate link: https://www.delipress.io
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+# DeliPress - Newsletters and Opt-In forms
+* Contributors: DeliPress
+* Tags: newsletter, mailchimp, opt-in forms, mailjet, popup
+* Requires at least: 4.5
+* Tested up to: 4.9.2
+* Requires PHP: 5.6
+* Stable tag: 1.3.9
+* Donate link: https://www.delipress.io
+* License: GPLv2 or later
+* License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 DeliPress lets you create beautiful newsletters in just a few minutes with our easy-to-use drag and drop Email Builder.
 We connect to MailChimp and Mailjet
 
 Grow your subscribers lists with fully customizable Opt-In forms that converts (popup, popout, exit intent and more).
 
-== Description ==
+## Description
 
 https://www.youtube.com/watch?v=8iCcGJ2gpCk
 
@@ -32,7 +32,7 @@ DeliPress newsletter is built to save you time.
 
 See more informations on [delipress.io](https://delipress.io/)
 
-= Features =
+### Features
 
 * Build beautiful responsive newsletters with an easy to use drag and drop Email Builder
 * Connect your website with your email service provider (MailChimp, Mailjet, SendInBlue, SendGrid)
@@ -44,7 +44,7 @@ See more informations on [delipress.io](https://delipress.io/)
 * View and manage your list and subscribers
 
 
-= What about the Premium? =
+### What about the Premium?
 
 * Premium support
 * Advanced Opt-In forms (Fly In, Popup, After content, ...)
@@ -55,13 +55,11 @@ See more informations on [delipress.io](https://delipress.io/)
 * Synchronize data between email service
 * Integration with Contact Form 7
 
-<h3>Translation</h3>
+### Translation
 
-<ul>
-	<li>English</li>
-	<li>French</li>
-	<li>Spanish</li>
-</ul>
+* English
+* French
+* Spanish
 
 *(DeliPress is compatible with Polylang, Elementor, Gutenberg, Contact Form 7)*
 
@@ -69,48 +67,47 @@ See more informations on [delipress.io](https://delipress.io/)
 
 Looking for a gamified e-commerce Opt-In solution? Try [Optin Wheel](https://wordpress.org/plugins/wp-optin-wheel/)
 
-== Installation ==
+## Installation
 
 1. Upload the plugin files to the `/wp-content/plugins/delipress` directory, or install the plugin through the WordPress plugins screen directly.
 2. Activate the plugin through the 'Plugins' screen in WordPress.
 
+### Frequently Asked Questions
 
-== Frequently Asked Questions ==
-
-= Which Email Service Providers can I connect DeliPress to? =
+#### Which Email Service Providers can I connect DeliPress to?
 
 You currently can connect to Mailchimp, Mailjet, SendInBlue or SendGrid
 
-= Can I send my emails from my own SMTP? =
+#### Can I send my emails from my own SMTP?
 
 No because most standard webhosts are not meant to send massive emails. They could end up in the spam folder.
 Sending emails via an email service provider is the best way to get them delivered to your subscribers' inbox.
 
-= Does DeliPress integrates with other plugins? =
+#### Does DeliPress integrates with other plugins?
 
 We planned to add integrations with WooCommerce, EDD and gravity Forms very soon.
 
-= Can I set up autoresponders? =
+#### Can I set up autoresponders?
 
 Not yet, but the feature will be added in the near future in the premium version of the plugin.
 
-= Is DeliPress available in my language? =
+#### Is DeliPress available in my language?
 
 DeliPress currently supports English, French and Spanish
 To help us translate DeliPress in your language, contact us
 
-= Can I import my contacts and campaigns from Mailchimp and other providers? =
+#### Can I import my contacts and campaigns from Mailchimp and other providers?
 
 DeliPress was built so that all your lists and emails built with DeliPress are synchronized between your WordPress website and your ESP.
 But we are not able to import campaigns previously built with your ESP into DeliPress.
 
 
-== Screenshots ==
+## Screenshots
 
 1. Email Builder
 2. Opt-In Builder
 
-== Changelog ==
+## Changelog
 
 = 1.3.9 (10/06/2018) =
 * Added: Opt-ins forms compliancy with GRPD
